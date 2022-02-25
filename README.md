@@ -170,7 +170,7 @@ ros2 launch turtlebot3_bringup robot.launch.py
 Se tudo deu certo, a ultima frase terminara com: Run!
 
 Agora em um novo terminal execute o Teleop:
-```
+``` 
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
 Neste ponto voce deve estar felz com os motores funcioando.
@@ -180,8 +180,13 @@ Agora vamos para o desafio maior, fazer a Intel RealSense funcionar no Foxy!!!!
 ```
 sudo apt-get install python3-pip
 ```
+    - Instlar NumPy
+```
+pip install numpy
+``` 
     - Instalar OpenCV
 ```
+sudo apt-get install libopencv-dev
 pip install opencv-contrib-python
 ```
 
