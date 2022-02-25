@@ -190,6 +190,9 @@ sudo apt-get install libopencv-dev
 pip install opencv-contrib-python
 ```
 
+AINDA SEM SOLUÇÃO PARA A REALSENSE - PARTINDO PARA O OPENMANIPULATOR
+
+
 
 
 - Configuracoes do PC REMOTO
