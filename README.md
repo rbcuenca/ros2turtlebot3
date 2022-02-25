@@ -157,6 +157,25 @@ Realizar a atualizacao do firmware do OpenCR:
 cd ~/opencr_update
 ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
+Voce pode verificar se tudo esta ok realizando, no RASP (no Turtlebot3) o teleop (teleoperacao) e mover as rodas com o teclado.
+
+Veja qual o IP do seu turtlebot (ifconig wlan0) e acesse via ssh.
+ssh ubuntu@SEU_ENDERECO_IP
+Lembrando que o usuario eh ubuntu e a senha eh turtlebot.
+
+Dentro do terminal realize o bringup do robo:
+``` 
+ros2 launch turtlebot3_bringup robot.launch.py
+```
+Se tudo deu certo, a ultima frase terminara com: Run!
+
+Agora em um novo terminal execute o Teleop:
+```
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+Neste ponto voce deve estar felz com os motores funcioando.
+
+Agora vamos para o desafio maior, fazer a Intel RealSense funcionar no Foxy!!!!
 
 
 - Configuracoes do PC REMOTO
