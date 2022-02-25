@@ -176,6 +176,15 @@ ros2 run turtlebot3_teleop teleop_keyboard
 Neste ponto voce deve estar felz com os motores funcioando.
 
 Agora vamos para o desafio maior, fazer a Intel RealSense funcionar no Foxy!!!!
+    - Instalar o PIP:
+```
+sudo apt-get install python3-pip
+```
+    - Instalar OpenCV
+```
+pip install opencv-contrib-python
+```
+
 
 
 - Configuracoes do PC REMOTO
