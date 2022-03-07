@@ -193,6 +193,10 @@ Como realsense nao sera continuada, instalei uma webcam usb simples.
 https://github.com/ros-drivers/usb_cam/tree/ros2
 branch origin/ros2
 
+instalar todos os tools do colcon:
+``
+sudo apt install pyhon3-colcon*
+``
 
 
 
