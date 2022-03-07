@@ -189,8 +189,10 @@ pip install numpy
 sudo apt-get install libopencv-dev
 pip install opencv-contrib-python
 ```
+Como realsense nao sera continuada, instalei uma webcam usb simples.
+https://github.com/ros-drivers/usb_cam/tree/ros2
+branch origin/ros2
 
-AINDA SEM SOLUÇÃO PARA A REALSENSE - PARTINDO PARA O OPENMANIPULATOR
 
 
 
