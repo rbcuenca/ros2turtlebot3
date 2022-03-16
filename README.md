@@ -202,4 +202,9 @@ sudo apt install pyhon3-colcon*
 
 
 - Configuracoes do PC REMOTO
-    - 
+
+
+
+# Links para portar do ROS1 para ROS2
+https://docs.ros.org/en/foxy/Contributing/Migration-Guide-Python.html
+
