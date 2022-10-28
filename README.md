@@ -209,3 +209,18 @@ sudo apt install pyhon3-colcon*
 # Links para portar do ROS1 para ROS2
 https://docs.ros.org/en/foxy/Contributing/Migration-Guide-Python.html
 
+
+# Atualização Agosto de 2022 - Imagem Turtlebot3 ROS2 Dashing e Realsense (sem romcpressão)
+
+Backup do SD comprimindo para guardar:
+``
+ dd if=/dev/sdc bs=4M conv=sync,noerror status=progress | gzip > InsperBot_Ros2_Dashing.gz 
+``
+Restaurar Backup SD:
+``
+gzip -d InsperBot_Ros2_Dashing.gz | sudo dd of=/dev/sdaX bs=4M conv=sync,noerror status=progress
+``
+ 
+
+
+
