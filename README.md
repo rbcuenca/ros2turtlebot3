@@ -1,6 +1,8 @@
-# nova meta: https://roscon.ros.org/2022/
+# Turtlebot3 com ROS2 (Dashing no Robo e Foxy no Computador)
 Projeto Feito no Lab 404 do Inpser
 Colaboradores: Rogério e Lícia
+
+A escolha de utilizar o Ros2 Dashing no Robo se deu pela melhor aceitação dos drivers da RealSense D415i e a escolha do Ros2 Foxy no computador foi para manter a compatibilidade dos atuais robôs com Ros1, sendo assim um SSD híbrido com ROS1, ROS2 e Docker do Bebop2.
 
 Material Utilizado:
 - Raspbery PI 4 
@@ -14,20 +16,24 @@ Computador:
 - Ubuntu 20.04 LTS
 - ROS2 Foxy Fitzroy
 Rasp 4:
-- Ubuntu 20.04 para o Turtlebot3
-- ROS2 Foxy Fitzroy
+- Ubuntu 18.04 server para RaspBerry Pi4
+- ROS2 Dashing Diademata
 
 Sites:
 Robotis (E-Manual): https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/
+Ubuntu 18.04 para Raspi4 arm64: http://old-releases.ubuntu.com/releases/18.04.4/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz
+ROS2 Dashing: https://docs.ros.org/en/dashing/Installation.html
+Ubunu 20.04 LTS Desktop: https://releases.ubuntu.com/focal/
 ROS2 Foxy: https://docs.ros.org/en/foxy/Installation.html
+ROS2 Wraper Intel Realsense: https://github.com/intel/ros2_intel_realsense
+
 
 
 Configuração do RaspBerry PI 4
-- Imagem baixado do site da robotis.com: https://www.robotis.com/service/download.php?no=2064
-- Gravar Imagem no cartão com o Disk (Ubuntu 20.04) ou Imager (Rasp)
+- Utilizar o "Disks" do linux para abrir o arquivo de imagem pré-instalada do Ubuntu server 18.04 para Raspi4
 - Iniciar a RaspBerry com o sistema gravado no cartão
     - Usuário: ubuntu
-    - Senha Padrão: turtlebot
+    - Senha Padrão: ubuntu (ele pedirá para repetir a senha e escolher uma nova)
 - Configurar a rede por NETPLAN:
 Deixarei aqui duas configurações, sendo a primeira para rede TTLS com acesso corporativo e o segundo para redes "domésticas".
 Configuração para Rede com TTLS, usuário e senha (Sem CA).
@@ -71,6 +77,17 @@ network:
                 "ssid_name":
                      password: "ssid_password"
 ```
+- Desabilitar a atualização automática
+    É interessante não permitir a atualização automática, então para desabilitar utilize o comando abaixo e altere o conteúdo como mostrado a seguir:
+
+```
+sudo nano /etc/apt/apt.conf.d/20auto-upgrades
+```
+```
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Unattended-Upgrade "0";
+```
+
 - Desabilitar o PowerSave do Wlan0 (caso nao esteja desabilitado a rede "morre" apos alguns minutos)
     - Para desabilitar voce precisa editar o arquivo de configuracao do servico com o comando abaixo: 
 ```
@@ -111,6 +128,11 @@ iw dev wlan0 get power_save
 ```
 A resposat esperada e: 
 Power save: off
+Se acontecer se aparecer: "Poser save: ON" basta repetir os comandos abaixo e verificar novamente.
+```
+sudo systemctl disable wifi_powersave@on.service
+sudo systemctl enable wifi_powersave@off.service
+```
 
 Agora chegou a hora de instalar ou configurar o LDS. Os TurtleBots3 comprados desde o inicio de 2022 estao com o LDS-02 os anteriores com o LDS-01. Caso voce use o LDS-01 nao precisa fazer a instalacao do driver e atualizacao do pacote do TurtleBot3. Entao so execute os comandos abaixo se voce usa o LDS-02!!!
 ```
@@ -127,9 +149,9 @@ Agora vamos exportar para o .bashrc o modelo do LDS que voce usa. Se voce usa o 
 echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
 source ~/.bashrc
 ```
-Por ultimo vamos dizer qual o modelo do Turtlebot3 ele eh. Voce deve substituir o waffle_pi pelo seu modelo (burger, waffle ou waffle_pi):
+Por ultimo vamos dizer qual o modelo do Turtlebot3 ele eh. Voce deve substituir o burger pelo seu modelo (burger, waffle ou waffle_pi):
 ```
-echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
+echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 source ~/.bashrc
 ```
     - Configuracao do OpenCR
@@ -151,7 +173,7 @@ rm -rf ./opencr_update.tar.bz2
 Fazer o Download do pacote do firmware atualizado:
 ```
 wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
-tar -xjf ./opencr_update.tar.bz2
+tar -xvf ./opencr_update.tar.bz2
 ```
 Realizar a atualizacao do firmware do OpenCR:
 ```
@@ -174,7 +196,7 @@ Agora em um novo terminal execute o Teleop:
 ``` 
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
-Neste ponto voce deve estar felz com os motores funcioando.
+Neste ponto voce deve estar feliz com os motores funcioando.
 
 Agora vamos para o desafio maior, fazer a Intel RealSense funcionar no Foxy!!!!
     - Instalar o PIP:
@@ -190,40 +212,49 @@ pip install numpy
 sudo apt-get install libopencv-dev
 pip install opencv-contrib-python
 ```
-Como realsense nao sera continuada, instalei uma webcam usb simples.
-https://github.com/ros-drivers/usb_cam/tree/ros2
-branch origin/ros2
+Para instar os drivers da RealSense para o ROS2 Dashing, basta seguir este git:
+```
+https://github.com/intel/ros2_intel_realsense
+```
 
-instalar todos os tools do colcon:
-``
-sudo apt install pyhon3-colcon*
-``
+# - Configuracoes do PC REMOTO
+    Para a preparação do PC Remoto, não há muitos procedimentos, basta o computador ter instalado um Ubuntu 20.04 (no caso do Ros2 Foxy) e iniciar a instlação do ROS2 Foxy com os seguinte comandos:
+    
+```    
+wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
+sudo chmod 755 ./install_ros2_foxy.sh
+bash ./install_ros2_foxy.sh
+```
 
+Agora a instalação das dependências (Gazebo 11, Cartographer e Navigation2):
+```
+sudo apt-get install ros-foxy-gazebo-*
+sudo apt install ros-foxy-cartographer
+sudo apt install ros-foxy-cartographer-ros
+sudo apt install ros-foxy-navigation2
+sudo apt install ros-foxy-nav2-bringup
+```
+Instalação dos pacotes do Turtlebot:
 
+```
+source ~/.bashrc
+sudo apt install ros-foxy-dynamixel-sdk
+sudo apt install ros-foxy-turtlebot3-msgs
+sudo apt install ros-foxy-turtlebot3
+```
+Preparando o ambiente:
+```
+echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+source ~/.bashrc
+```
 
+Com este tutorial o Turtlebot3 Burger com a Realsense funcionaram perfeitamente.
 
-- Configuracoes do PC REMOTO
+Segue abaixo um link para migrar códigos do ROS1 para o ROS2.
 
 
 
 # Links para portar do ROS1 para ROS2
 https://docs.ros.org/en/foxy/Contributing/Migration-Guide-Python.html
-
-
-# Atualização Agosto de 2022 - Imagem Turtlebot3 ROS2 Dashing e Realsense (sem romcpressão)
-
-Backup do SD comprimindo para guardar:
-
-``
- dd if=/dev/sdc bs=4M conv=sync,noerror status=progress | gzip > InsperBot_Ros2_Dashing.gz 
-``
-
-Restaurar Backup SD:
-
-``
-gzip -d InsperBot_Ros2_Dashing.gz | sudo dd of=/dev/sdaX bs=4M conv=sync,noerror status=progress
-``
- 
-
 
 
