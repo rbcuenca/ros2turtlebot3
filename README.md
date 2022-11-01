@@ -219,7 +219,7 @@ https://github.com/intel/ros2_intel_realsense
 ```
 
 # Configuracoes do PC REMOTO
-    Para a preparação do PC Remoto, não há muitos procedimentos, basta o computador ter instalado um Ubuntu 20.04 (no caso do Ros2 Foxy) e iniciar a instlação do ROS2 Foxy com os seguinte comandos:
+Para a preparação do PC Remoto, não há muitos procedimentos, basta o computador ter instalado um Ubuntu 20.04 (no caso do Ros2 Foxy) e iniciar a instlação do ROS2 Foxy com os seguinte comandos:
     
 ```    
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
