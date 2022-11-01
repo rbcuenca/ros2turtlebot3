@@ -6,10 +6,10 @@ A escolha de utilizar o Ros2 Dashing no Robo se deu pela melhor aceitação dos 
 
 Material Utilizado:
 - Raspbery PI 4 
-- TurtleBot 3 Waffle_Pi
+- TurtleBot 3 Burger
     - RaspBerry PI 4
     - OpenCR
-    - OpenMannipulator
+- Realsense D400
 
 Sistemas
 Computador: 
