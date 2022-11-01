@@ -154,7 +154,8 @@ Por ultimo vamos dizer qual o modelo do Turtlebot3 ele eh. Voce deve substituir 
 echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 source ~/.bashrc
 ```
-    - Configuracao do OpenCR
+
+- Configuracao do OpenCR
 Neste momento voce deve conectar o OpenCR ao Rasp com o cabo USB
 Vamos ao procecimento para atualizar o OpenCR
 
@@ -199,15 +200,15 @@ ros2 run turtlebot3_teleop teleop_keyboard
 Neste ponto voce deve estar feliz com os motores funcioando.
 
 Agora vamos para o desafio maior, fazer a Intel RealSense funcionar no Foxy!!!!
-    - Instalar o PIP:
+- Instalar o PIP:
 ```
 sudo apt-get install python3-pip
 ```
-    - Instlar NumPy
+- Instlar NumPy
 ```
 pip install numpy
 ``` 
-    - Instalar OpenCV
+- Instalar OpenCV
 ```
 sudo apt-get install libopencv-dev
 pip install opencv-contrib-python
@@ -217,7 +218,7 @@ Para instar os drivers da RealSense para o ROS2 Dashing, basta seguir este git:
 https://github.com/intel/ros2_intel_realsense
 ```
 
-# - Configuracoes do PC REMOTO
+# Configuracoes do PC REMOTO
     Para a preparação do PC Remoto, não há muitos procedimentos, basta o computador ter instalado um Ubuntu 20.04 (no caso do Ros2 Foxy) e iniciar a instlação do ROS2 Foxy com os seguinte comandos:
     
 ```    
