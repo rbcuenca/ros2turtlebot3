@@ -154,8 +154,20 @@ Por ultimo vamos dizer qual o modelo do Turtlebot3 ele eh. Voce deve substituir 
 echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 source ~/.bashrc
 ```
+Antes de configurar a OpenCR eu faço uma atualização do sistema e tem um fato interessante, ou na atualização ou se desligar o "hibernar automático" as USBs deixaraão de funcionar, então basta trocar o kernel para o que vou apontar nos códigos abaixo ou mais novo:
+
+```
+apt list linux-image*raspi
+```
+Este comando acima listará todos os kernels para a raspi, agora é só escolher e instalar com o comando abaixo:
+```
+sudo apt install --install-recommends linux-image-5.4.0-1047-raspi
+sudo apt update
+sudo apt upgrade
+```
 
 - Configuracao do OpenCR
+
 Neste momento voce deve conectar o OpenCR ao Rasp com o cabo USB
 Vamos ao procecimento para atualizar o OpenCR
 
