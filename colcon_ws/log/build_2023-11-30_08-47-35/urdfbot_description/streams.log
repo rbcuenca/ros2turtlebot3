@@ -1,0 +1,52 @@
+[0.080s] Invoking command in '/home/borg/colcon_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake /home/borg/colcon_ws/src/urdfbot_description -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/install/urdfbot_description
+[0.135s] -- The C compiler identification is GNU 11.4.0
+[0.196s] -- The CXX compiler identification is GNU 11.4.0
+[0.208s] -- Detecting C compiler ABI info
+[0.288s] -- Detecting C compiler ABI info - done
+[0.301s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.301s] -- Detecting C compile features
+[0.301s] -- Detecting C compile features - done
+[0.307s] -- Detecting CXX compiler ABI info
+[0.404s] -- Detecting CXX compiler ABI info - done
+[0.418s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.419s] -- Detecting CXX compile features
+[0.419s] -- Detecting CXX compile features - done
+[0.423s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.650s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.750s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[0.806s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.807s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.918s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.921s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.922s] -- Added test 'lint_cmake' to check CMake code style
+[0.922s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.925s] -- Added test 'xmllint' to check XML markup files
+[0.927s] -- Configuring done
+[0.932s] -- Generating done
+[0.933s] -- Build files have been written to: /home/borg/colcon_ws/build/urdfbot_description
+[1.003s] Invoked command in '/home/borg/colcon_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake /home/borg/colcon_ws/src/urdfbot_description -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/install/urdfbot_description
+[1.006s] Invoking command in '/home/borg/colcon_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/urdfbot_description -- -j12 -l12
+[1.302s] Invoked command in '/home/borg/colcon_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/urdfbot_description -- -j12 -l12
+[1.371s] Invoking command in '/home/borg/colcon_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/urdfbot_description
+[1.380s] -- Install configuration: ""
+[1.381s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//urdf
+[1.381s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//urdf/urdfbot_simple.urdf
+[1.381s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//rviz
+[1.381s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch
+[1.381s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/urdf_visualize.launch.py
+[1.382s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/package_run_dependencies/urdfbot_description
+[1.382s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/parent_prefix_path/urdfbot_description
+[1.382s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.sh
+[1.382s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.dsv
+[1.382s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/path.sh
+[1.383s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/path.dsv
+[1.383s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.bash
+[1.383s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.sh
+[1.383s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.zsh
+[1.383s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.dsv
+[1.383s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/package.dsv
+[1.384s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/packages/urdfbot_description
+[1.384s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig.cmake
+[1.384s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig-version.cmake
+[1.384s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/package.xml
+[1.387s] Invoked command in '/home/borg/colcon_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/urdfbot_description

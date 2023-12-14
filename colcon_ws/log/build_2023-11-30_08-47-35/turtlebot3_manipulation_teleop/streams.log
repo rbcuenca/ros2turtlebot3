@@ -1,0 +1,78 @@
+[0.083s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_teleop': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/home/borg/colcon_ws/install/gripper_controller:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake /home/borg/colcon_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop
+[0.151s] -- The C compiler identification is GNU 11.4.0
+[0.209s] -- The CXX compiler identification is GNU 11.4.0
+[0.222s] -- Detecting C compiler ABI info
+[0.300s] -- Detecting C compiler ABI info - done
+[0.321s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.321s] -- Detecting C compile features
+[0.322s] -- Detecting C compile features - done
+[0.329s] -- Detecting CXX compiler ABI info
+[0.422s] -- Detecting CXX compiler ABI info - done
+[0.439s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.440s] -- Detecting CXX compile features
+[0.441s] -- Detecting CXX compile features - done
+[0.446s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.667s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.786s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.843s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.850s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.861s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.885s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.918s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.065s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.070s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.198s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.243s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.325s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.345s] -- Looking for pthread.h
+[1.429s] -- Looking for pthread.h - found
+[1.430s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.515s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.516s] -- Found Threads: TRUE  
+[1.723s] -- Found turtlebot3_manipulation_bringup: 2.1.1 (/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/cmake)
+[1.723s] -- Found turtlebot3_manipulation_moveit_config: 2.1.1 (/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/cmake)
+[1.724s] -- Found turtlebot3_manipulation_description: 2.1.1 (/home/borg/colcon_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/cmake)
+[1.726s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.782s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.947s] -- Found control_msgs: 4.4.0 (/opt/ros/humble/share/control_msgs/cmake)
+[2.796s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[2.822s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.964s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.967s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.967s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/borg/colcon_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop/include>
+[2.967s] -- Configured cppcheck exclude dirs and/or files: 
+[2.969s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.970s] -- Configured cpplint exclude dirs and/or files: 
+[2.971s] -- Added test 'lint_cmake' to check CMake code style
+[2.973s] -- Added test 'uncrustify' to check C / C++ code style
+[2.974s] -- Configured uncrustify additional arguments: 
+[2.975s] -- Added test 'xmllint' to check XML markup files
+[2.978s] -- Configuring done
+[3.003s] -- Generating done
+[3.006s] -- Build files have been written to: /home/borg/colcon_ws/build/turtlebot3_manipulation_teleop
+[3.025s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_teleop' returned '0': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/home/borg/colcon_ws/install/gripper_controller:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake /home/borg/colcon_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop
+[3.027s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_teleop': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/home/borg/colcon_ws/install/gripper_controller:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_teleop -- -j12 -l12
+[3.088s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_manipulation_teleop.dir/src/turtlebot3_manipulation_teleop.cpp.o[0m
+[9.897s] [100%] [32m[1mLinking CXX executable turtlebot3_manipulation_teleop[0m
+[10.238s] [100%] Built target turtlebot3_manipulation_teleop
+[10.251s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_teleop' returned '0': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/home/borg/colcon_ws/install/gripper_controller:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_teleop -- -j12 -l12
+[10.285s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_teleop': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/home/borg/colcon_ws/install/gripper_controller:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_manipulation_teleop
+[10.293s] -- Install configuration: ""
+[10.294s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/lib/turtlebot3_manipulation_teleop/turtlebot3_manipulation_teleop
+[10.303s] -- Set runtime path of "/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/lib/turtlebot3_manipulation_teleop/turtlebot3_manipulation_teleop" to ""
+[10.304s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/ament_index/resource_index/package_run_dependencies/turtlebot3_manipulation_teleop
+[10.304s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/ament_index/resource_index/parent_prefix_path/turtlebot3_manipulation_teleop
+[10.304s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/environment/ament_prefix_path.sh
+[10.304s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/environment/ament_prefix_path.dsv
+[10.304s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/environment/path.sh
+[10.305s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/environment/path.dsv
+[10.305s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/local_setup.bash
+[10.305s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/local_setup.sh
+[10.305s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/local_setup.zsh
+[10.305s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/local_setup.dsv
+[10.305s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.dsv
+[10.306s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/ament_index/resource_index/packages/turtlebot3_manipulation_teleop
+[10.306s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/cmake/turtlebot3_manipulation_teleopConfig.cmake
+[10.306s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/cmake/turtlebot3_manipulation_teleopConfig-version.cmake
+[10.306s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.xml
+[10.308s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_teleop' returned '0': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/home/borg/colcon_ws/install/gripper_controller:/home/borg/colcon_ws/install/urdfbot_description:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_manipulation_teleop

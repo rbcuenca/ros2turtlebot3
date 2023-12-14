@@ -1,0 +1,4 @@
+Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer': /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer -- -j12 -l12
+Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer' returned '0': /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer -- -j12 -l12
+Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer': /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer
+Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer' returned '0': /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_manipulation_cartographer

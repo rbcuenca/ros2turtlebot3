@@ -1,0 +1,9 @@
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/uninstall.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/urdfbot_description_uninstall.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/test.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/edit_cache.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/rebuild_cache.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/list_install_components.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/install.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/install/local.dir
+/home/borg/colcon_ws/src/build/urdfbot_description/CMakeFiles/install/strip.dir

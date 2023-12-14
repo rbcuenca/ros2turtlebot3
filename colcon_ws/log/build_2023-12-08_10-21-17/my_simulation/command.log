@@ -1,0 +1,2 @@
+Invoking command in '/home/borg/colcon_ws/build/my_simulation': /usr/bin/cmake --build /home/borg/colcon_ws/build/my_simulation -- -j12 -l12
+Invoked command in '/home/borg/colcon_ws/build/my_simulation' returned '2': /usr/bin/cmake --build /home/borg/colcon_ws/build/my_simulation -- -j12 -l12

@@ -1,0 +1,2 @@
+Invoking command in '/home/borg/colcon_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_gazebo -- -j12 -l12
+Invoked command in '/home/borg/colcon_ws/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_gazebo -- -j12 -l12

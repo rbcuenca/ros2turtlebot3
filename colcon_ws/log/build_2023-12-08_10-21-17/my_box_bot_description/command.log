@@ -1,0 +1,4 @@
+Invoking command in '/home/borg/colcon_ws/build/my_box_bot_description': /usr/bin/cmake --build /home/borg/colcon_ws/build/my_box_bot_description -- -j12 -l12
+Invoked command in '/home/borg/colcon_ws/build/my_box_bot_description' returned '0': /usr/bin/cmake --build /home/borg/colcon_ws/build/my_box_bot_description -- -j12 -l12
+Invoking command in '/home/borg/colcon_ws/build/my_box_bot_description': /usr/bin/cmake --install /home/borg/colcon_ws/build/my_box_bot_description
+Invoked command in '/home/borg/colcon_ws/build/my_box_bot_description' returned '0': /usr/bin/cmake --install /home/borg/colcon_ws/build/my_box_bot_description

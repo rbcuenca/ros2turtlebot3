@@ -1,0 +1,4 @@
+[0.082s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_hardware': /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_hardware -- -j12 -l12
+[0.296s] [100%] Built target turtlebot3_manipulation_hardware
+[0.437s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_hardware' returned '0': /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_hardware -- -j12 -l12
+[0.703s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_hardware': /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_manipulation_hardware

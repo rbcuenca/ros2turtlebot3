@@ -1,0 +1,15 @@
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/ament_index/resource_index/package_run_dependencies/turtlebot3_manipulation
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/ament_index/resource_index/parent_prefix_path/turtlebot3_manipulation
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/environment/ament_prefix_path.sh
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/environment/ament_prefix_path.dsv
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/environment/path.sh
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/environment/path.dsv
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/local_setup.bash
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/local_setup.sh
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/local_setup.zsh
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/local_setup.dsv
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.dsv
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/ament_index/resource_index/packages/turtlebot3_manipulation
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/cmake/turtlebot3_manipulationConfig.cmake
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/cmake/turtlebot3_manipulationConfig-version.cmake
+/home/borg/colcon_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.xml

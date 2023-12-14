@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//urdf
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//urdf/box_bot_geometric.urdf
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//urdf/box_bot_geometric_meshes.urdf
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//rviz
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//launch
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//launch/urdf_visualize_geometric.launch.py
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//launch/urdf_visualize_meshes.launch.py
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//meshes
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/ament_index/resource_index/package_run_dependencies/my_box_bot_description
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/ament_index/resource_index/parent_prefix_path/my_box_bot_description
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/ament_prefix_path.sh
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/ament_prefix_path.dsv
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/path.sh
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/path.dsv
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.bash
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.sh
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.zsh
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.dsv
+-- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/package.dsv
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/ament_index/resource_index/packages/my_box_bot_description
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/cmake/my_box_bot_descriptionConfig.cmake
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/cmake/my_box_bot_descriptionConfig-version.cmake
+-- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/package.xml

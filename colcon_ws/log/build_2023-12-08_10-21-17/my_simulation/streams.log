@@ -1,0 +1,22 @@
+[0.056s] Invoking command in '/home/borg/colcon_ws/build/my_simulation': /usr/bin/cmake --build /home/borg/colcon_ws/build/my_simulation -- -j12 -l12
+[0.144s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.316s] Traceback (most recent call last):
+[0.317s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.318s]     from ament_package.templates import get_environment_hook_template_path
+[0.319s] ModuleNotFoundError: No module named 'ament_package'
+[0.328s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.328s]   execute_process(/usr/bin/python3.10
+[0.328s]   /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.328s]   /home/borg/colcon_ws/build/my_simulation/ament_cmake_package_templates/templates.cmake)
+[0.328s]   returned error code 1
+[0.328s] Call Stack (most recent call first):
+[0.328s]   /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.329s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.329s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.329s]   CMakeLists.txt:22 (find_package)
+[0.329s] 
+[0.330s] [0m
+[0.330s] -- Configuring incomplete, errors occurred!
+[0.330s] See also "/home/borg/colcon_ws/build/my_simulation/CMakeFiles/CMakeOutput.log".
+[0.331s] gmake: *** [Makefile:390: cmake_check_build_system] Error 1
+[0.477s] Invoked command in '/home/borg/colcon_ws/build/my_simulation' returned '2': /usr/bin/cmake --build /home/borg/colcon_ws/build/my_simulation -- -j12 -l12

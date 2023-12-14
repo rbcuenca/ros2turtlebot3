@@ -1,0 +1,31 @@
+[0.141s] Invoking command in '/home/borg/colcon_ws/build/my_box_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/my_box_bot_description -- -j12 -l12
+[0.216s] Invoked command in '/home/borg/colcon_ws/build/my_box_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/my_box_bot_description -- -j12 -l12
+[0.351s] Invoking command in '/home/borg/colcon_ws/build/my_box_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/my_box_bot_description
+[0.360s] -- Install configuration: ""
+[0.360s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//urdf
+[0.361s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//urdf/box_bot_geometric.urdf
+[0.362s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//urdf/box_bot_geometric_meshes.urdf
+[0.363s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//rviz
+[0.363s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//launch
+[0.364s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//launch/urdf_visualize_geometric.launch.py
+[0.364s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//launch/urdf_visualize_meshes.launch.py
+[0.364s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//meshes
+[0.365s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//meshes/cute_cube.blend
+[0.365s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//meshes/cute_cube.dae
+[0.365s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description//meshes/lambert3_baseColor.png
+[0.366s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/ament_index/resource_index/package_run_dependencies/my_box_bot_description
+[0.366s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/ament_index/resource_index/parent_prefix_path/my_box_bot_description
+[0.366s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/ament_prefix_path.sh
+[0.367s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/ament_prefix_path.dsv
+[0.367s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/path.sh
+[0.367s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/environment/path.dsv
+[0.368s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.bash
+[0.368s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.sh
+[0.368s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.zsh
+[0.368s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.dsv
+[0.368s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/package.dsv
+[0.369s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/ament_index/resource_index/packages/my_box_bot_description
+[0.369s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/cmake/my_box_bot_descriptionConfig.cmake
+[0.369s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/cmake/my_box_bot_descriptionConfig-version.cmake
+[0.369s] -- Up-to-date: /home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/package.xml
+[0.739s] Invoked command in '/home/borg/colcon_ws/build/my_box_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/my_box_bot_description

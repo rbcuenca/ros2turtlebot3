@@ -1,0 +1,13 @@
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/uninstall.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/my_simulation_uninstall.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/turtlebot3_drive.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/obstacle1.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/obstacle2.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/obstacles.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/test.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/edit_cache.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/rebuild_cache.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/list_install_components.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/install.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/install/local.dir
+/home/borg/colcon_ws/build/my_simulation/CMakeFiles/install/strip.dir

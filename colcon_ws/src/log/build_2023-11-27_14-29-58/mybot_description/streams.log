@@ -1,0 +1,41 @@
+[0.112s] Invoking command in '/home/borg/colcon_ws/src/build/mybot_description': /usr/bin/cmake /home/borg/colcon_ws/src/mybot_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/src/install/mybot_description
+[0.144s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.144s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.144s]   CMake.
+[0.144s] 
+[0.144s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.144s]   CMake that the project does not need compatibility with older versions.
+[0.144s] 
+[0.144s] [0m
+[0.297s] -- The C compiler identification is GNU 11.4.0
+[0.502s] -- The CXX compiler identification is GNU 11.4.0
+[0.514s] -- Detecting C compiler ABI info
+[0.585s] -- Detecting C compiler ABI info - done
+[0.594s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.594s] -- Detecting C compile features
+[0.596s] -- Detecting C compile features - done
+[0.601s] -- Detecting CXX compiler ABI info
+[0.682s] -- Detecting CXX compiler ABI info - done
+[0.696s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.697s] -- Detecting CXX compile features
+[0.697s] -- Detecting CXX compile features - done
+[0.727s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.727s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.727s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.727s]   CMake did not find one.
+[0.727s] 
+[0.727s]   Could not find a package configuration file provided by "catkin" with any
+[0.727s]   of the following names:
+[0.727s] 
+[0.727s]     catkinConfig.cmake
+[0.727s]     catkin-config.cmake
+[0.727s] 
+[0.728s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.728s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.728s]   provides a separate development package or SDK, be sure it has been
+[0.728s]   installed.
+[0.728s] 
+[0.728s] [0m
+[0.728s] -- Configuring incomplete, errors occurred!
+[0.728s] See also "/home/borg/colcon_ws/src/build/mybot_description/CMakeFiles/CMakeOutput.log".
+[0.731s] Invoked command in '/home/borg/colcon_ws/src/build/mybot_description' returned '1': /usr/bin/cmake /home/borg/colcon_ws/src/mybot_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/src/install/mybot_description

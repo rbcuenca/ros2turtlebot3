@@ -1,0 +1,1 @@
+Invoking command in '/home/borg/colcon_ws/src/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/borg/colcon_ws/src/urdfbot_description -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/src/install/urdfbot_description

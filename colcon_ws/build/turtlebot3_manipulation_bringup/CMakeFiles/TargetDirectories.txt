@@ -1,0 +1,9 @@
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/uninstall.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/turtlebot3_manipulation_bringup_uninstall.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/test.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/edit_cache.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/rebuild_cache.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/list_install_components.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/install.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/install/local.dir
+/home/borg/colcon_ws/build/turtlebot3_manipulation_bringup/CMakeFiles/install/strip.dir

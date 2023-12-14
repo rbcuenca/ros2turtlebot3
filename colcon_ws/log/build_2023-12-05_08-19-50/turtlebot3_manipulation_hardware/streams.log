@@ -1,0 +1,37 @@
+[0.251s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_hardware -- -j12 -l12
+[0.327s] [100%] Built target turtlebot3_manipulation_hardware
+[0.368s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_manipulation_hardware -- -j12 -l12
+[0.574s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_manipulation_hardware
+[0.654s] -- Install configuration: ""
+[0.654s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/turtlebot3_manipulation_hardware.xml
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include/turtlebot3_manipulation_hardware
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include/turtlebot3_manipulation_hardware/dynamixel_sdk_wrapper.hpp
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include/turtlebot3_manipulation_hardware/opencr.hpp
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include/turtlebot3_manipulation_hardware/opencr_control_table.hpp
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include/turtlebot3_manipulation_hardware/opencr_definitions.hpp
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include/turtlebot3_manipulation_hardware/turtlebot3_manipulation_system.hpp
+[0.655s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/include/turtlebot3_manipulation_hardware/visibility_control.h
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/lib/libturtlebot3_manipulation_hardware.so
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/environment/library_path.sh
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/environment/library_path.dsv
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/ament_index/resource_index/package_run_dependencies/turtlebot3_manipulation_hardware
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/ament_index/resource_index/parent_prefix_path/turtlebot3_manipulation_hardware
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/environment/ament_prefix_path.sh
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/environment/ament_prefix_path.dsv
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/environment/path.sh
+[0.656s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/environment/path.dsv
+[0.657s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/local_setup.bash
+[0.657s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/local_setup.sh
+[0.657s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/local_setup.zsh
+[0.657s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/local_setup.dsv
+[0.657s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.dsv
+[0.657s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/ament_index/resource_index/packages/turtlebot3_manipulation_hardware
+[0.657s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/turtlebot3_manipulation_hardware
+[0.658s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.658s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+[0.658s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.658s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/cmake/turtlebot3_manipulation_hardwareConfig.cmake
+[0.658s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/cmake/turtlebot3_manipulation_hardwareConfig-version.cmake
+[0.659s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.xml
+[0.996s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_manipulation_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_manipulation_hardware

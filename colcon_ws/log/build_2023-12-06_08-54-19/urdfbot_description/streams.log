@@ -1,0 +1,40 @@
+[0.111s] Invoking command in '/home/borg/colcon_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/urdfbot_description -- -j12 -l12
+[0.192s] Invoked command in '/home/borg/colcon_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/urdfbot_description -- -j12 -l12
+[0.341s] Invoking command in '/home/borg/colcon_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/urdfbot_description
+[0.398s] -- Install configuration: ""
+[0.398s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//urdf
+[0.398s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//urdf/urdfbot_simple.urdf
+[0.398s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//rviz
+[0.399s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch
+[0.400s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/urdf_visualize.launch.py
+[0.401s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/urdf_visualize_rviz.launch.py
+[0.401s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/control.launch.py
+[0.402s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/spawn_robot_ros2_control_complete.launch.xml
+[0.402s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes
+[0.402s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_body.dae
+[0.403s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_claw.dae
+[0.403s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_foot.dae
+[0.404s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_head.dae
+[0.404s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_limb.dae
+[0.404s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_texture.png
+[0.404s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/arm.dae
+[0.405s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/direita.dae
+[0.405s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/esquerda.dae
+[0.406s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//config
+[0.406s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//config/controller_position.yaml
+[0.406s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/package_run_dependencies/urdfbot_description
+[0.406s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/parent_prefix_path/urdfbot_description
+[0.407s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.sh
+[0.407s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.dsv
+[0.407s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/path.sh
+[0.407s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/path.dsv
+[0.407s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.bash
+[0.408s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.sh
+[0.408s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.zsh
+[0.408s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.dsv
+[0.409s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/package.dsv
+[0.409s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/packages/urdfbot_description
+[0.409s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig.cmake
+[0.409s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig-version.cmake
+[0.410s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/package.xml
+[0.714s] Invoked command in '/home/borg/colcon_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/urdfbot_description

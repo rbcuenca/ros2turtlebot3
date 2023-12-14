@@ -1,0 +1,871 @@
+[0.155s] Invoking command in '/home/borg/colcon_ws/build/my_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --build /home/borg/colcon_ws/build/my_simulation -- -j12 -l12
+[0.199s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.361s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.361s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.361s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.361s]   problems in calling code that expects `find_package` result variables
+[0.362s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.362s] Call Stack (most recent call first):
+[0.362s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.362s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.362s]   CMakeLists.txt:23 (find_package)
+[0.363s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.363s] [0m
+[0.412s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.474s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.478s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.490s] -- Searching for dependencies of ignition-math6
+[0.491s] -- Looking for OGRE...
+[0.498s] -- Found Ogre Ghadamon (1.9.0)
+[0.499s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.508s] -- Looking for OGRE_Paging...
+[0.508s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.509s] -- Looking for OGRE_Terrain...
+[0.509s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.509s] -- Looking for OGRE_Property...
+[0.510s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.510s] -- Looking for OGRE_RTShaderSystem...
+[0.510s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.511s] -- Looking for OGRE_Volume...
+[0.511s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.511s] -- Looking for OGRE_Overlay...
+[0.512s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.673s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.674s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.674s] -- Searching for dependencies of ignition-transport8
+[0.690s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.698s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.703s] -- Checking for module 'libzmq >= 4'
+[0.716s] --   Found libzmq , version 4.3.4
+[0.756s] -- Checking for module 'uuid'
+[0.770s] --   Found uuid, version 2.37.2
+[0.802s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.803s] -- Searching for dependencies of ignition-msgs5
+[0.824s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.829s] -- Checking for module 'tinyxml2'
+[0.843s] --   Found tinyxml2, version 9.0.0
+[0.874s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.875s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.875s] -- Searching for dependencies of ignition-common3
+[0.876s] -- Looking for dlfcn.h - found
+[0.876s] -- Looking for libdl - found
+[0.891s] -- Searching for <ignition-common3> component [graphics]
+[0.892s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.893s] -- Searching for dependencies of ignition-common3-graphics
+[0.893s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.894s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.895s] -- Searching for dependencies of ignition-fuel_tools4
+[0.928s] -- Checking for module 'jsoncpp'
+[0.941s] --   Found jsoncpp, version 1.9.5
+[0.976s] -- Checking for module 'libzip'
+[0.990s] --   Found libzip, version 1.7.3
+[1.019s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.019s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.019s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.021s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.021s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.042s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.044s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.051s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.063s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.081s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.212s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.306s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[1.367s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.368s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.515s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.707s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.803s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[1.879s] -- Configuring done
+[1.946s] -- Generating done
+[1.951s] -- Build files have been written to: /home/borg/colcon_ws/build/my_simulation
+[1.984s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[1.990s] [35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[1.991s] [35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[1.992s] [35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[2.010s] [ 25%] Built target turtlebot3_drive
+[2.189s] [ 37%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[2.189s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[2.194s] [ 62%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[15.235s] [ 75%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[15.435s] [ 87%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[15.575s] [ 87%] Built target obstacles
+[15.706s] [ 87%] Built target obstacle2
+[15.914s] [100%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[16.147s] [100%] Built target obstacle1
+[16.158s] Invoked command in '/home/borg/colcon_ws/build/my_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --build /home/borg/colcon_ws/build/my_simulation -- -j12 -l12
+[16.194s] Invoking command in '/home/borg/colcon_ws/build/my_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --install /home/borg/colcon_ws/build/my_simulation
+[16.202s] -- Install configuration: ""
+[16.202s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/lib/my_simulation/turtlebot3_drive
+[16.202s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch
+[16.203s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/empty_world.launch.py
+[16.203s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/spawn_turtlebot3.launch.py
+[16.203s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/turtlebot3_dqn_stage1.launch.py
+[16.203s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/turtlebot3_dqn_stage2.launch.py
+[16.203s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/turtlebot3_dqn_stage3.launch.py
+[16.203s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/turtlebot3_dqn_stage4.launch.py
+[16.203s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/turtlebot3_house.launch.py
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/turtlebot3_world.launch.py
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/robot_state_publisher.launch.py
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/insperbot_lab.launch.py
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/pista-23B.launch.py
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//launch/pista_nova.launch.py
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger/model-1_4.sdf
+[16.204s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger/model.config
+[16.205s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger/model.sdf
+[16.205s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common
+[16.205s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/meshes
+[16.205s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/meshes/burger_base.dae
+[16.205s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/meshes/lds.dae
+[16.206s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/meshes/r200.dae
+[16.206s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/meshes/tire.dae
+[16.206s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/meshes/waffle_base.dae
+[16.207s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[16.207s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_common/model.config
+[16.207s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world
+[16.207s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/goal_box
+[16.208s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/goal_box/model.config
+[16.208s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/goal_box/model.sdf
+[16.208s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/inner_walls
+[16.208s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/inner_walls/model.config
+[16.208s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[16.208s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/model.config
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/model.sdf
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle1
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle1/model.config
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle2
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle2/model.config
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle_plugin
+[16.209s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacles
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacles/model.config
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_dqn_world/obstacles/model.sdf
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_house
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_house/model.config
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_house/model.sdf
+[16.210s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle/model-1_4.sdf
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle/model.config
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle/model.sdf
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle_pi
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle_pi/model.config
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_waffle_pi/model.sdf
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_world
+[16.211s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_world/meshes
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_world/meshes/hexagon.dae
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_world/meshes/wall.dae
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_world/model-1_4.sdf
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_world/model.config
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_world/model.sdf
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/mybot
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/mybot/model-1_4_.sdf
+[16.212s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/mybot/model.config
+[16.213s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/mybot/model.sdf
+[16.213s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger_insper
+[16.213s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger_insper/model.config
+[16.213s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger_insper/model-1_4_.sdf
+[16.213s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/turtlebot3_burger_insper/model.sdf
+[16.214s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1
+[16.214s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper
+[16.214s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05
+[16.214s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/materials
+[16.214s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/materials/scripts
+[16.214s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/materials/scripts/creeper.material
+[16.215s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/materials/textures
+[16.215s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/materials/textures/caixa.dae
+[16.215s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/materials/textures/caixa.png
+[16.215s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/materials/textures/caixa.png_old
+[16.215s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/model.config
+[16.215s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_05/model.sdf
+[16.216s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15
+[16.216s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/materials
+[16.216s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/materials/scripts
+[16.216s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/materials/scripts/creeper.material
+[16.216s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/materials/textures
+[16.217s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/materials/textures/caixa.dae
+[16.217s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/materials/textures/caixa.png
+[16.217s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/materials/textures/caixa.png_old
+[16.217s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/model.config
+[16.217s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_15/model.sdf
+[16.218s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25
+[16.218s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/materials
+[16.218s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/materials/scripts
+[16.218s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/materials/scripts/creeper.material
+[16.218s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/materials/textures
+[16.218s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/materials/textures/caixa.dae
+[16.219s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/materials/textures/caixa.png
+[16.219s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/materials/textures/caixa.png_old
+[16.219s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/model.config
+[16.219s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_25/model.sdf
+[16.219s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55
+[16.220s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/materials
+[16.220s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/materials/scripts
+[16.220s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/materials/scripts/creeper.material
+[16.220s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/materials/textures
+[16.220s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/materials/textures/caixa.dae
+[16.221s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/materials/textures/caixa.png
+[16.221s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/materials/textures/caixa.png_old
+[16.221s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/model.config
+[16.221s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/aruco_55/model.sdf
+[16.221s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11
+[16.221s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/materials
+[16.222s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/materials/scripts
+[16.222s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/materials/scripts/creeper.material
+[16.222s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/materials/textures
+[16.222s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/materials/textures/MarkerData.png
+[16.222s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/materials/textures/MarkerData.png.001.png
+[16.222s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/materials/textures/creeper.dae
+[16.222s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/model.config
+[16.223s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11/model.sdf
+[16.223s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa
+[16.223s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/materials
+[16.223s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/materials/scripts
+[16.223s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/materials/scripts/creeper.material
+[16.223s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/materials/textures
+[16.224s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/materials/textures/MarkerData.png
+[16.224s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/materials/textures/MarkerData.png.001.png
+[16.224s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/materials/textures/creeper.dae
+[16.224s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/model.config
+[16.224s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_rosa/model.sdf
+[16.224s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde
+[16.225s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials
+[16.225s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/scripts
+[16.225s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/scripts/creeper.material
+[16.225s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/textures
+[16.225s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png
+[16.225s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png.001.png
+[16.226s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png.001.png_old
+[16.226s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png_old
+[16.226s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/materials/textures/creeper.dae
+[16.226s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/model.config
+[16.226s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_verde/model.sdf
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/scripts
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/scripts/creeper.material
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/textures
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png.001.png
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png.001.png_old
+[16.227s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png_old
+[16.228s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/creeper.dae
+[16.228s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/model.config
+[16.228s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_11_vermelho/model.sdf
+[16.228s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12
+[16.228s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/materials
+[16.228s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/materials/scripts
+[16.228s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/materials/scripts/creeper.material
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/materials/textures
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/materials/textures/MarkerData.png
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/materials/textures/MarkerData.png.001.png
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/materials/textures/creeper.dae
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/model.config
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12/model.sdf
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/materials
+[16.229s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/materials/scripts
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/materials/scripts/creeper.material
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/materials/textures
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/materials/textures/MarkerData.png
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/materials/textures/MarkerData.png.001.png
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/materials/textures/creeper.dae
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/model.config
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_rosa/model.sdf
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/materials
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/materials/scripts
+[16.230s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/materials/scripts/creeper.material
+[16.231s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/materials/textures
+[16.231s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/materials/textures/MarkerData.png
+[16.232s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/materials/textures/MarkerData.png.001.png
+[16.232s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/materials/textures/creeper.dae
+[16.232s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/model.config
+[16.232s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_12_verde/model.sdf
+[16.232s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho
+[16.232s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials
+[16.233s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/scripts
+[16.233s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/scripts/creeper.material
+[16.233s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/textures
+[16.233s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png
+[16.233s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png.001.png
+[16.233s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png.001.png_old
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png_old
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/creeper.dae
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/model.config
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/creeper/creeper_21_vermelho/model.sdf
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_02
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_02/model.config
+[16.234s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_02/model.sdf
+[16.235s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_03
+[16.235s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_03/model.config
+[16.235s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_03/model.sdf
+[16.235s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_04
+[16.235s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_04/model.config
+[16.235s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_04/model.sdf
+[16.236s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_05
+[16.236s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_05/model.config
+[16.236s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_05/model.sdf
+[16.236s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_1
+[16.236s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_1/model.config
+[16.236s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/mesa/mesa_1/model.sdf
+[16.236s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto
+[16.237s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle
+[16.237s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/materials
+[16.237s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/materials/scripts
+[16.237s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/materials/scripts/bicycle.material
+[16.237s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/materials/textures
+[16.237s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/materials/textures/bicycle.dae
+[16.237s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/materials/textures/bicycle.png
+[16.238s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/model.config
+[16.239s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bicycle/model.sdf
+[16.239s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird
+[16.239s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/materials
+[16.239s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/materials/scripts
+[16.239s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/materials/scripts/bird.material
+[16.239s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/materials/textures
+[16.240s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/materials/textures/bird.dae
+[16.240s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/materials/textures/bird.png
+[16.240s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/model.config
+[16.240s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/bird/model.sdf
+[16.240s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_azul
+[16.240s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_azul/model.config
+[16.240s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_azul/model.sdf
+[16.241s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_vermelha_01
+[16.241s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_vermelha_01/model.config
+[16.241s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_vermelha_01/model.sdf
+[16.241s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_vermelha_02
+[16.241s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_vermelha_02/model.config
+[16.241s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/caixa_vermelha_02/model.sdf
+[16.241s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat
+[16.242s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/materials
+[16.242s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/materials/scripts
+[16.242s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/materials/scripts/cat.material
+[16.242s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/materials/textures
+[16.242s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/materials/textures/cat.dae
+[16.242s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/materials/textures/cat.png
+[16.242s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/model.config
+[16.243s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/cat/model.sdf
+[16.243s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog
+[16.243s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/materials
+[16.243s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/materials/scripts
+[16.243s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/materials/scripts/dog.material
+[16.243s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/materials/textures
+[16.243s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/materials/textures/dog.dae
+[16.244s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/materials/textures/dog.png
+[16.244s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/model.config
+[16.244s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/dog/model.sdf
+[16.244s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse
+[16.244s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse/materials
+[16.244s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse/materials/scripts
+[16.244s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse/materials/scripts/horse.material
+[16.245s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse/materials/textures
+[16.245s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse/materials/textures/horse.png
+[16.245s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse/model.config
+[16.245s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/objeto/horse/model.sdf
+[16.245s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/parede
+[16.246s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/parede/model.config
+[16.246s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/parede/model.sdf
+[16.246s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala
+[16.246s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/materials
+[16.246s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/materials/scripts
+[16.246s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/materials/scripts/pisosala.material
+[16.247s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/materials/textures
+[16.247s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/materials/textures/pisosala - antigo.png
+[16.247s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/materials/textures/pisosala.png
+[16.247s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/materials/textures/pisosala_cuenca.png
+[16.247s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/model.config
+[16.247s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-1/pisosala/model.sdf
+[16.248s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B
+[16.248s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper
+[16.248s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100
+[16.248s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/materials
+[16.248s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/materials/scripts
+[16.248s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/materials/scripts/creeper.material
+[16.248s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/materials/textures
+[16.249s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/materials/textures/caixa.dae
+[16.249s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/materials/textures/caixa.png
+[16.249s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/materials/textures/caixa.png_old
+[16.249s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/model.config
+[16.249s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_100/model.sdf
+[16.249s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150
+[16.250s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/materials
+[16.250s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/materials/scripts
+[16.250s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/materials/scripts/creeper.material
+[16.250s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/materials/textures
+[16.250s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/materials/textures/caixa.dae
+[16.251s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/materials/textures/caixa.png
+[16.251s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/materials/textures/caixa.png_old
+[16.251s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/model.config
+[16.251s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_150/model.sdf
+[16.251s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25
+[16.251s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/materials
+[16.252s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/materials/scripts
+[16.252s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/materials/scripts/creeper.material
+[16.252s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/materials/textures
+[16.252s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/materials/textures/caixa.dae
+[16.252s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/materials/textures/caixa.png
+[16.252s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/materials/textures/caixa.png_old
+[16.252s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/model.config
+[16.253s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_25/model.sdf
+[16.253s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250
+[16.253s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/materials
+[16.253s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/materials/scripts
+[16.253s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/materials/scripts/creeper.material
+[16.254s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/materials/textures
+[16.254s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/materials/textures/caixa.dae
+[16.254s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/materials/textures/caixa.png
+[16.254s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/materials/textures/caixa.png_old
+[16.254s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/model.config
+[16.255s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/aruco_250/model.sdf
+[16.255s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul
+[16.255s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/materials
+[16.255s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/materials/scripts
+[16.255s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/materials/scripts/creeper.material
+[16.255s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/materials/textures
+[16.255s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/materials/textures/MarkerData.png
+[16.256s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/materials/textures/MarkerData.png.001.png
+[16.256s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/materials/textures/creeper.dae
+[16.256s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/model.sdf
+[16.256s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_11_azul/model.config
+[16.257s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde
+[16.257s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials
+[16.257s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/scripts
+[16.257s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/scripts/creeper.material
+[16.257s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/textures
+[16.258s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png
+[16.258s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png.001.png
+[16.258s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png.001.png_old
+[16.259s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png_old
+[16.259s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/materials/textures/creeper.dae
+[16.259s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/model.sdf
+[16.260s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_13_verde/model.config
+[16.260s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul
+[16.260s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/materials
+[16.260s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/materials/scripts
+[16.261s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/materials/scripts/creeper.material
+[16.261s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/materials/textures
+[16.261s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/materials/textures/MarkerData.png
+[16.262s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/materials/textures/MarkerData.png.001.png
+[16.262s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/materials/textures/creeper.dae
+[16.262s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/model.sdf
+[16.262s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_21_azul/model.config
+[16.263s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde
+[16.263s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/materials
+[16.263s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/materials/scripts
+[16.263s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/materials/scripts/creeper.material
+[16.263s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/materials/textures
+[16.263s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/materials/textures/MarkerData.png
+[16.264s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/materials/textures/MarkerData.png.001.png
+[16.264s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/materials/textures/creeper.dae
+[16.264s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/model.sdf
+[16.264s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/creeper/creeper_32_verde/model.config
+[16.264s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa
+[16.265s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_02
+[16.265s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_02/model.config
+[16.265s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_02/model.sdf
+[16.265s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_03
+[16.265s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_03/model.config
+[16.267s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_03/model.sdf
+[16.267s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_04
+[16.267s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_04/model.config
+[16.267s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_04/model.sdf
+[16.267s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_05
+[16.268s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_05/model.config
+[16.268s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_05/model.sdf
+[16.268s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_1
+[16.268s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_1/model.config
+[16.268s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/mesa/mesa_1/model.sdf
+[16.269s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto
+[16.269s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle
+[16.269s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/materials
+[16.269s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/materials/scripts
+[16.269s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/materials/scripts/bicycle.material
+[16.269s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/materials/textures
+[16.269s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/materials/textures/bicycle.dae
+[16.270s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/materials/textures/bicycle.png
+[16.270s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/model.config
+[16.270s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bicycle/model.sdf
+[16.270s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird
+[16.270s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/materials
+[16.271s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/materials/scripts
+[16.271s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/materials/scripts/bird.material
+[16.271s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/materials/textures
+[16.271s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/materials/textures/bird.dae
+[16.271s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/materials/textures/bird.png
+[16.271s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/model.config
+[16.271s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/bird/model.sdf
+[16.272s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_azul
+[16.272s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_azul/model.config
+[16.272s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_azul/model.sdf
+[16.272s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_vermelha_01
+[16.272s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_vermelha_01/model.config
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_vermelha_01/model.sdf
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_vermelha_02
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_vermelha_02/model.config
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/caixa_vermelha_02/model.sdf
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/materials
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/materials/scripts
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/materials/scripts/cat.material
+[16.273s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/materials/textures
+[16.274s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/materials/textures/cat.dae
+[16.274s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/materials/textures/cat.png
+[16.274s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/model.config
+[16.274s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/cat/model.sdf
+[16.274s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog
+[16.274s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/materials
+[16.274s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/materials/scripts
+[16.275s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/materials/scripts/dog.material
+[16.275s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/materials/textures
+[16.275s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/materials/textures/dog.dae
+[16.275s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/materials/textures/dog.png
+[16.275s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/model.config
+[16.275s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/dog/model.sdf
+[16.276s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse
+[16.276s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse/materials
+[16.276s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse/materials/scripts
+[16.276s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse/materials/scripts/horse.material
+[16.276s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse/materials/textures
+[16.276s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse/materials/textures/horse.png
+[16.276s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse/model.config
+[16.277s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/objeto/horse/model.sdf
+[16.277s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/parede
+[16.277s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/parede/model.config
+[16.277s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/parede/model.sdf
+[16.277s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala
+[16.278s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/materials
+[16.278s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/materials/scripts
+[16.278s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/materials/scripts/pisosala.material
+[16.278s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/materials/textures
+[16.278s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/materials/textures/pisosala - antigo.png
+[16.279s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/materials/textures/pisosala.png
+[16.279s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/materials/textures/pisosala_cuenca.png
+[16.279s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/model.config
+[16.279s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista23-B/pisosala/model.sdf
+[16.279s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova
+[16.279s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper
+[16.280s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100
+[16.280s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/materials
+[16.280s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/materials/scripts
+[16.280s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/materials/scripts/creeper.material
+[16.280s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/materials/textures
+[16.281s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/materials/textures/caixa.dae
+[16.281s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/materials/textures/caixa.png
+[16.281s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/materials/textures/caixa.png_old
+[16.281s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/model.config
+[16.281s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_100/model.sdf
+[16.281s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150
+[16.281s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/materials
+[16.282s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/materials/scripts
+[16.282s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/materials/scripts/creeper.material
+[16.282s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/materials/textures
+[16.282s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/materials/textures/caixa.dae
+[16.282s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/materials/textures/caixa.png
+[16.283s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/materials/textures/caixa.png_old
+[16.283s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/model.config
+[16.283s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_150/model.sdf
+[16.283s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25
+[16.283s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/materials
+[16.283s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/materials/scripts
+[16.284s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/materials/scripts/creeper.material
+[16.284s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/materials/textures
+[16.284s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/materials/textures/caixa.dae
+[16.284s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/materials/textures/caixa.png
+[16.284s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/materials/textures/caixa.png_old
+[16.285s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/model.config
+[16.285s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_25/model.sdf
+[16.285s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250
+[16.285s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/materials
+[16.285s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/materials/scripts
+[16.286s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/materials/scripts/creeper.material
+[16.286s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/materials/textures
+[16.286s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/materials/textures/caixa.dae
+[16.286s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/materials/textures/caixa.png
+[16.287s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/materials/textures/caixa.png_old
+[16.287s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/model.config
+[16.287s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/aruco_250/model.sdf
+[16.288s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11
+[16.288s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/materials
+[16.288s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/materials/scripts
+[16.288s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/materials/scripts/creeper.material
+[16.289s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/materials/textures
+[16.289s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/materials/textures/MarkerData.png
+[16.289s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/materials/textures/MarkerData.png.001.png
+[16.289s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/materials/textures/creeper.dae
+[16.289s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/model.config
+[16.290s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11/model.sdf
+[16.290s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul
+[16.291s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/materials
+[16.291s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/materials/scripts
+[16.291s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/materials/scripts/creeper.material
+[16.291s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/materials/textures
+[16.291s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/materials/textures/MarkerData.png
+[16.291s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/materials/textures/MarkerData.png.001.png
+[16.291s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/materials/textures/creeper.dae
+[16.292s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/model.config
+[16.292s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_azul/model.sdf
+[16.292s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa
+[16.292s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/materials
+[16.292s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/materials/scripts
+[16.292s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/materials/scripts/creeper.material
+[16.292s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/materials/textures
+[16.293s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/materials/textures/MarkerData.png
+[16.293s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/materials/textures/MarkerData.png.001.png
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/materials/textures/creeper.dae
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/model.config
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_rosa/model.sdf
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/scripts
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/scripts/creeper.material
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/textures
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/textures/MarkerData.png
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/textures/MarkerData.png.001.png
+[16.294s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/textures/MarkerData.png.001.png_old
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/textures/MarkerData.png_old
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/materials/textures/creeper.dae
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/model.config
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_11_vermelho/model.sdf
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/materials
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/materials/scripts
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/materials/scripts/creeper.material
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/materials/textures
+[16.295s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/materials/textures/MarkerData.png
+[16.296s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/materials/textures/MarkerData.png.001.png
+[16.296s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/materials/textures/creeper.dae
+[16.296s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/model.config
+[16.296s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12/model.sdf
+[16.296s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa
+[16.296s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/materials
+[16.296s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/materials/scripts
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/materials/scripts/creeper.material
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/materials/textures
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/materials/textures/MarkerData.png
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/materials/textures/MarkerData.png.001.png
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/materials/textures/creeper.dae
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/model.config
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_rosa/model.sdf
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/materials
+[16.297s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/materials/scripts
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/materials/scripts/creeper.material
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/materials/textures
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/materials/textures/MarkerData.png
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/materials/textures/MarkerData.png.001.png
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/materials/textures/creeper.dae
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/model.config
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_12_verde/model.sdf
+[16.298s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/scripts
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/scripts/creeper.material
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/textures
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/textures/MarkerData.png
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/textures/MarkerData.png.001.png
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/textures/MarkerData.png.001.png_old
+[16.299s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/textures/MarkerData.png_old
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/materials/textures/creeper.dae
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/model.config
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_13_verde/model.sdf
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/materials
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/materials/scripts
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/materials/scripts/creeper.material
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/materials/textures
+[16.300s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/materials/textures/MarkerData.png
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/materials/textures/MarkerData.png.001.png
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/materials/textures/creeper.dae
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/model.config
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_21_azul/model.sdf
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/materials
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/materials/scripts
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/materials/scripts/creeper.material
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/materials/textures
+[16.301s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/materials/textures/MarkerData.png
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/materials/textures/MarkerData.png.001.png
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/materials/textures/creeper.dae
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/model.config
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/creeper/creeper_32_verde/model.sdf
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_02
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_02/model.config
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_02/model.sdf
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_03
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_03/model.config
+[16.302s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_03/model.sdf
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_04
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_04/model.config
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_04/model.sdf
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_05
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_05/model.config
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_05/model.sdf
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_1
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_1/model.config
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/mesa/mesa_1/model.sdf
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/materials
+[16.303s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/materials/scripts
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/materials/scripts/bicycle.material
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/materials/textures
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/materials/textures/bicycle.dae
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/materials/textures/bicycle.png
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/model.config
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bicycle/model.sdf
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/materials
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/materials/scripts
+[16.304s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/materials/scripts/bird.material
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/materials/textures
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/materials/textures/bird.dae
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/materials/textures/bird.png
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/model.config
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/bird/model.sdf
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_azul
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_azul/model.config
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_azul/model.sdf
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_vermelha_01
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_vermelha_01/model.config
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_vermelha_01/model.sdf
+[16.305s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_vermelha_02
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_vermelha_02/model.config
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/caixa_vermelha_02/model.sdf
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/materials
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/materials/scripts
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/materials/scripts/cat.material
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/materials/textures
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/materials/textures/cat.dae
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/materials/textures/cat.png
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/model.config
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/cat/model.sdf
+[16.306s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/materials
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/materials/scripts
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/materials/scripts/dog.material
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/materials/textures
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/materials/textures/dog.dae
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/materials/textures/dog.png
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/model.config
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/dog/model.sdf
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse
+[16.307s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse/materials
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse/materials/scripts
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse/materials/scripts/horse.material
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse/materials/textures
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse/materials/textures/horse.png
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse/model.config
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/objeto/horse/model.sdf
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/parede
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/parede/model.config
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/parede/model.sdf
+[16.308s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/materials
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/materials/scripts
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/materials/scripts/pisosala.material
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/materials/textures
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/materials/textures/pisosala.png
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/materials/textures/pisosala_antigo.png
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/model.config
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//models/pista_nova/pisosala/model.sdf
+[16.309s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//rviz
+[16.310s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//rviz/tb3_gazebo.rviz
+[16.310s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf
+[16.310s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/common_properties.urdf
+[16.310s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/turtlebot3_burger.urdf
+[16.310s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/turtlebot3_waffle.urdf
+[16.310s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/turtlebot3_waffle_pi.urdf
+[16.311s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/common_properties.xacro
+[16.311s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/mybot.gazebo.urdf
+[16.311s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/mybot.gazebo.xacro
+[16.311s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/mybot.urdf
+[16.311s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/mybot.urdf.xacro
+[16.311s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes
+[16.312s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/bases
+[16.312s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/bases/burger_base.stl
+[16.312s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra
+[16.312s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/arm.dae
+[16.312s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/arm.stl
+[16.312s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/base_camera1.dae
+[16.313s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/base_camera1.stl
+[16.313s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/base_link_garra.dae
+[16.313s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/base_link_garra.stl
+[16.313s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/direita.dae
+[16.313s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/direita.stl
+[16.314s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/esquerda.dae
+[16.314s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/esquerda.stl
+[16.314s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/garra1garrabraco1.stl
+[16.314s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/garra1garradireita1.stl
+[16.314s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/garra1garraesquerda1.stl
+[16.314s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/lat11.dae
+[16.315s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/lat11.stl
+[16.315s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/lat21.dae
+[16.315s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/lat21.stl
+[16.315s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/lat31.dae
+[16.315s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/lat31.stl
+[16.316s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/servo_garra1.dae
+[16.316s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/garra/servo_garra1.stl
+[16.316s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors
+[16.316s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/arm.dae
+[16.316s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/arm.stl
+[16.317s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/astra.dae
+[16.317s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/astra.jpg
+[16.317s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/direita.dae
+[16.317s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/esquerda.dae
+[16.317s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/garra_direita.stl
+[16.317s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/garra_esquerda.stl
+[16.318s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/l_finger.dae
+[16.318s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/l_finger_color.tif
+[16.318s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/l_finger_tip.dae
+[16.318s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/l_finger_tip_color.tif
+[16.318s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/lds.stl
+[16.319s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/r200.dae
+[16.319s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/sensors/r200.jpg
+[16.319s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/wheels
+[16.319s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/wheels/left_tire.stl
+[16.319s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/meshes/wheels/right_tire.stl
+[16.319s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/turtlebot3_burger_insper.urdf
+[16.320s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//urdf/mybot.gazebo.xacro_original
+[16.320s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds
+[16.320s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/empty_world.world
+[16.320s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/turtlebot3_dqn_stage1.world
+[16.320s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/turtlebot3_dqn_stage2.world
+[16.320s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/turtlebot3_dqn_stage3.world
+[16.321s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/turtlebot3_dqn_stage4.world
+[16.321s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/turtlebot3_house.world
+[16.321s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/turtlebot3_world.world
+[16.321s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/lab.world
+[16.321s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/pista23-B.world
+[16.321s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation//worlds/pista_nova.world
+[16.322s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/include/
+[16.322s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/include//turtlebot3_gazebo
+[16.322s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[16.322s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/ament_index/resource_index/package_run_dependencies/my_simulation
+[16.322s] -- Installing: /home/borg/colcon_ws/install/my_simulation/share/ament_index/resource_index/parent_prefix_path/my_simulation
+[16.322s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/environment/ament_prefix_path.sh
+[16.322s] -- Installing: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/environment/ament_prefix_path.dsv
+[16.323s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/environment/path.sh
+[16.323s] -- Installing: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/environment/path.dsv
+[16.323s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/local_setup.bash
+[16.323s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/local_setup.sh
+[16.323s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/local_setup.zsh
+[16.324s] -- Installing: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/local_setup.dsv
+[16.324s] -- Installing: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/package.dsv
+[16.324s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/ament_index/resource_index/packages/my_simulation
+[16.324s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.325s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.325s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/cmake/my_simulationConfig.cmake
+[16.325s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/cmake/my_simulationConfig-version.cmake
+[16.325s] -- Up-to-date: /home/borg/colcon_ws/install/my_simulation/share/my_simulation/package.xml
+[16.325s] Invoked command in '/home/borg/colcon_ws/build/my_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --install /home/borg/colcon_ws/build/my_simulation

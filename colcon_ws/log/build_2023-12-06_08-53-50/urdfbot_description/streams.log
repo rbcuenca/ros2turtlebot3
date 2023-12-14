@@ -1,0 +1,52 @@
+[0.106s] Invoking command in '/home/borg/colcon_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/urdfbot_description -- -j12 -l12
+[0.148s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.331s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[0.362s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.363s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.430s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.433s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.434s] -- Added test 'lint_cmake' to check CMake code style
+[0.434s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.436s] -- Added test 'xmllint' to check XML markup files
+[0.437s] -- Configuring done
+[0.441s] -- Generating done
+[0.443s] -- Build files have been written to: /home/borg/colcon_ws/build/urdfbot_description
+[0.587s] Invoked command in '/home/borg/colcon_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/urdfbot_description -- -j12 -l12
+[1.127s] Invoking command in '/home/borg/colcon_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/urdfbot_description
+[1.287s] -- Install configuration: ""
+[1.288s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//urdf
+[1.288s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//urdf/urdfbot_simple.urdf
+[1.288s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//rviz
+[1.288s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch
+[1.288s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/urdf_visualize.launch.py
+[1.289s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/urdf_visualize_rviz.launch.py
+[1.289s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/control.launch.py
+[1.290s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//launch/spawn_robot_ros2_control_complete.launch.xml
+[1.290s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes
+[1.290s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_body.dae
+[1.290s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_claw.dae
+[1.291s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_foot.dae
+[1.291s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_head.dae
+[1.291s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_limb.dae
+[1.291s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_texture.png
+[1.291s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/arm.dae
+[1.291s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/direita.dae
+[1.292s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//meshes/esquerda.dae
+[1.292s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//config
+[1.292s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description//config/controller_position.yaml
+[1.292s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/package_run_dependencies/urdfbot_description
+[1.292s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/parent_prefix_path/urdfbot_description
+[1.292s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.sh
+[1.292s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.dsv
+[1.293s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/path.sh
+[1.293s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/environment/path.dsv
+[1.293s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.bash
+[1.293s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.sh
+[1.293s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.zsh
+[1.293s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/local_setup.dsv
+[1.293s] -- Installing: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/package.dsv
+[1.293s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/ament_index/resource_index/packages/urdfbot_description
+[1.294s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig.cmake
+[1.294s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig-version.cmake
+[1.294s] -- Up-to-date: /home/borg/colcon_ws/install/urdfbot_description/share/urdfbot_description/package.xml
+[1.349s] Invoked command in '/home/borg/colcon_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/urdfbot_description

@@ -1,0 +1,640 @@
+[0.357s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_gazebo -- -j12 -l12
+[0.385s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.573s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.574s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.574s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.574s]   problems in calling code that expects `find_package` result variables
+[0.574s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.574s] Call Stack (most recent call first):
+[0.574s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.575s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.575s]   CMakeLists.txt:23 (find_package)
+[0.576s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.576s] [0m
+[0.634s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.697s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.701s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.712s] -- Searching for dependencies of ignition-math6
+[0.714s] -- Looking for OGRE...
+[0.721s] -- Found Ogre Ghadamon (1.9.0)
+[0.721s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.734s] -- Looking for OGRE_Paging...
+[0.735s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.735s] -- Looking for OGRE_Terrain...
+[0.735s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.735s] -- Looking for OGRE_Property...
+[0.735s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.736s] -- Looking for OGRE_RTShaderSystem...
+[0.736s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.737s] -- Looking for OGRE_Volume...
+[0.737s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.737s] -- Looking for OGRE_Overlay...
+[0.737s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.867s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.868s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.868s] -- Searching for dependencies of ignition-transport8
+[0.884s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.894s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.898s] -- Checking for module 'libzmq >= 4'
+[0.914s] --   Found libzmq , version 4.3.4
+[0.959s] -- Checking for module 'uuid'
+[0.966s] --   Found uuid, version 2.37.2
+[0.997s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.997s] -- Searching for dependencies of ignition-msgs5
+[1.014s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.020s] -- Checking for module 'tinyxml2'
+[1.033s] --   Found tinyxml2, version 9.0.0
+[1.067s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.069s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.070s] -- Searching for dependencies of ignition-common3
+[1.070s] -- Looking for dlfcn.h - found
+[1.070s] -- Looking for libdl - found
+[1.082s] -- Searching for <ignition-common3> component [graphics]
+[1.083s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.084s] -- Searching for dependencies of ignition-common3-graphics
+[1.084s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.088s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.089s] -- Searching for dependencies of ignition-fuel_tools4
+[1.133s] -- Checking for module 'jsoncpp'
+[1.145s] --   Found jsoncpp, version 1.9.5
+[1.182s] -- Checking for module 'libzip'
+[1.196s] --   Found libzip, version 1.7.3
+[1.225s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.225s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.226s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.230s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.231s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.257s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.261s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.270s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.285s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.304s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.434s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.528s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[1.589s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.591s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.735s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.889s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.988s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[2.071s] -- Configuring done
+[2.167s] -- Generating done
+[2.169s] -- Build files have been written to: /home/borg/colcon_ws/build/turtlebot3_gazebo
+[2.203s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[2.205s] [35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[2.206s] [35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[2.208s] [35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[2.227s] [ 25%] Built target turtlebot3_drive
+[2.417s] [ 62%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[2.417s] [ 62%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[2.417s] [ 62%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[15.298s] [ 75%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[15.523s] [ 87%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[15.798s] [ 87%] Built target obstacle2
+[15.858s] [ 87%] Built target obstacle1
+[16.640s] [100%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[16.840s] [100%] Built target obstacles
+[16.849s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --build /home/borg/colcon_ws/build/turtlebot3_gazebo -- -j12 -l12
+[16.881s] Invoking command in '/home/borg/colcon_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_gazebo
+[16.886s] -- Install configuration: ""
+[16.887s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[16.887s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[16.887s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[16.887s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[16.887s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[16.887s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[16.887s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/insperbot_lab.launch.py
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/pista-23B.launch.py
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[16.888s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[16.889s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[16.890s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[16.891s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[16.892s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[16.893s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/mybot
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/mybot/model-1_4_.sdf
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/mybot/model.config
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/mybot/model.sdf
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_insper
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_insper/model.config
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_insper/model-1_4_.sdf
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_insper/model.sdf
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper
+[16.894s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/materials
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/materials/scripts
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/materials/scripts/creeper.material
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/materials/textures
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/materials/textures/caixa.dae
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/materials/textures/caixa.png
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/materials/textures/caixa.png_old
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/model.config
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_05/model.sdf
+[16.895s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/materials
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/materials/scripts
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/materials/scripts/creeper.material
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/materials/textures
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/materials/textures/caixa.dae
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/materials/textures/caixa.png
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/materials/textures/caixa.png_old
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/model.config
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_15/model.sdf
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25
+[16.896s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/materials
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/materials/scripts
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/materials/scripts/creeper.material
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/materials/textures
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/materials/textures/caixa.dae
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/materials/textures/caixa.png
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/materials/textures/caixa.png_old
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/model.config
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_25/model.sdf
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/materials
+[16.897s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/materials/scripts
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/materials/scripts/creeper.material
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/materials/textures
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/materials/textures/caixa.dae
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/materials/textures/caixa.png
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/materials/textures/caixa.png_old
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/model.config
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/aruco_55/model.sdf
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/materials
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/materials/scripts
+[16.898s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/materials/scripts/creeper.material
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/materials/textures
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/materials/textures/MarkerData.png
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/materials/textures/MarkerData.png.001.png
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/materials/textures/creeper.dae
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/model.config
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11/model.sdf
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/materials
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/materials/scripts
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/materials/scripts/creeper.material
+[16.899s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/materials/textures
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/materials/textures/MarkerData.png
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/materials/textures/MarkerData.png.001.png
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/materials/textures/creeper.dae
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/model.config
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_rosa/model.sdf
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/scripts
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/scripts/creeper.material
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/textures
+[16.900s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png.001.png
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png.001.png_old
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/textures/MarkerData.png_old
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/materials/textures/creeper.dae
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/model.config
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_verde/model.sdf
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/scripts
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/scripts/creeper.material
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/textures
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png.001.png
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png.001.png_old
+[16.901s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/MarkerData.png_old
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/materials/textures/creeper.dae
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/model.config
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_11_vermelho/model.sdf
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/materials
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/materials/scripts
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/materials/scripts/creeper.material
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/materials/textures
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/materials/textures/MarkerData.png
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/materials/textures/MarkerData.png.001.png
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/materials/textures/creeper.dae
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/model.config
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12/model.sdf
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa
+[16.902s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/materials
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/materials/scripts
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/materials/scripts/creeper.material
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/materials/textures
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/materials/textures/MarkerData.png
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/materials/textures/MarkerData.png.001.png
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/materials/textures/creeper.dae
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/model.config
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_rosa/model.sdf
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/materials
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/materials/scripts
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/materials/scripts/creeper.material
+[16.903s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/materials/textures
+[16.904s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/materials/textures/MarkerData.png
+[16.904s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/materials/textures/MarkerData.png.001.png
+[16.904s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/materials/textures/creeper.dae
+[16.904s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/model.config
+[16.904s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_12_verde/model.sdf
+[16.905s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho
+[16.905s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials
+[16.905s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/scripts
+[16.905s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/scripts/creeper.material
+[16.905s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/textures
+[16.905s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png
+[16.906s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png.001.png
+[16.906s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png.001.png_old
+[16.906s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/MarkerData.png_old
+[16.906s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/materials/textures/creeper.dae
+[16.906s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/model.config
+[16.906s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/creeper/creeper_21_vermelho/model.sdf
+[16.906s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa
+[16.907s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_02
+[16.907s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_02/model.config
+[16.907s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_02/model.sdf
+[16.907s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_03
+[16.907s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_03/model.config
+[16.907s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_03/model.sdf
+[16.907s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_04
+[16.908s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_04/model.config
+[16.908s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_04/model.sdf
+[16.908s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_05
+[16.908s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_05/model.config
+[16.908s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_05/model.sdf
+[16.908s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_1
+[16.908s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_1/model.config
+[16.909s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/mesa/mesa_1/model.sdf
+[16.909s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto
+[16.909s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle
+[16.909s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/materials
+[16.909s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/materials/scripts
+[16.909s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/materials/scripts/bicycle.material
+[16.909s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/materials/textures
+[16.910s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/materials/textures/bicycle.dae
+[16.910s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/materials/textures/bicycle.png
+[16.910s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/model.config
+[16.910s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bicycle/model.sdf
+[16.910s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird
+[16.910s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/materials
+[16.911s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/materials/scripts
+[16.911s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/materials/scripts/bird.material
+[16.911s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/materials/textures
+[16.911s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/materials/textures/bird.dae
+[16.911s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/materials/textures/bird.png
+[16.911s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/model.config
+[16.911s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/bird/model.sdf
+[16.912s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_azul
+[16.912s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_azul/model.config
+[16.912s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_azul/model.sdf
+[16.912s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_vermelha_01
+[16.912s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_vermelha_01/model.config
+[16.912s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_vermelha_01/model.sdf
+[16.912s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_vermelha_02
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_vermelha_02/model.config
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/caixa_vermelha_02/model.sdf
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/materials
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/materials/scripts
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/materials/scripts/cat.material
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/materials/textures
+[16.913s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/materials/textures/cat.dae
+[16.914s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/materials/textures/cat.png
+[16.914s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/model.config
+[16.914s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/cat/model.sdf
+[16.914s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog
+[16.914s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/materials
+[16.914s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/materials/scripts
+[16.914s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/materials/scripts/dog.material
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/materials/textures
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/materials/textures/dog.dae
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/materials/textures/dog.png
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/model.config
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/dog/model.sdf
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse/materials
+[16.915s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse/materials/scripts
+[16.916s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse/materials/scripts/horse.material
+[16.916s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse/materials/textures
+[16.916s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse/materials/textures/horse.png
+[16.916s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse/model.config
+[16.916s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/objeto/horse/model.sdf
+[16.917s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/parede
+[16.917s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/parede/model.config
+[16.917s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/parede/model.sdf
+[16.917s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala
+[16.917s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/materials
+[16.918s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/materials/scripts
+[16.918s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/materials/scripts/pisosala.material
+[16.918s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/materials/textures
+[16.918s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/materials/textures/pisosala - antigo.png
+[16.918s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/materials/textures/pisosala.png
+[16.918s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/materials/textures/pisosala_cuenca.png
+[16.919s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/model.config
+[16.919s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-1/pisosala/model.sdf
+[16.919s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B
+[16.919s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper
+[16.919s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100
+[16.919s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/materials
+[16.920s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/materials/scripts
+[16.920s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/materials/scripts/creeper.material
+[16.920s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/materials/textures
+[16.920s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/materials/textures/caixa.dae
+[16.920s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/materials/textures/caixa.png
+[16.920s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/materials/textures/caixa.png_old
+[16.921s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/model.config
+[16.921s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_100/model.sdf
+[16.921s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150
+[16.921s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/materials
+[16.921s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/materials/scripts
+[16.921s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/materials/scripts/creeper.material
+[16.922s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/materials/textures
+[16.922s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/materials/textures/caixa.dae
+[16.922s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/materials/textures/caixa.png
+[16.922s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/materials/textures/caixa.png_old
+[16.922s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/model.config
+[16.922s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_150/model.sdf
+[16.923s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25
+[16.923s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/materials
+[16.923s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/materials/scripts
+[16.923s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/materials/scripts/creeper.material
+[16.923s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/materials/textures
+[16.924s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/materials/textures/caixa.dae
+[16.924s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/materials/textures/caixa.png
+[16.924s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/materials/textures/caixa.png_old
+[16.924s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/model.config
+[16.924s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_25/model.sdf
+[16.924s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250
+[16.925s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/materials
+[16.925s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/materials/scripts
+[16.925s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/materials/scripts/creeper.material
+[16.925s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/materials/textures
+[16.925s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/materials/textures/caixa.dae
+[16.926s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/materials/textures/caixa.png
+[16.926s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/materials/textures/caixa.png_old
+[16.926s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/model.config
+[16.926s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/aruco_250/model.sdf
+[16.926s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul
+[16.926s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/materials
+[16.927s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/materials/scripts
+[16.927s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/materials/scripts/creeper.material
+[16.927s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/materials/textures
+[16.927s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/materials/textures/MarkerData.png
+[16.927s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/materials/textures/MarkerData.png.001.png
+[16.927s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/materials/textures/creeper.dae
+[16.928s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/model.sdf
+[16.928s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_11_azul/model.config
+[16.928s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde
+[16.928s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials
+[16.928s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/scripts
+[16.929s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/scripts/creeper.material
+[16.929s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/textures
+[16.929s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png
+[16.929s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png.001.png
+[16.929s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png.001.png_old
+[16.929s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/textures/MarkerData.png_old
+[16.930s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/materials/textures/creeper.dae
+[16.930s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/model.sdf
+[16.930s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_13_verde/model.config
+[16.930s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul
+[16.930s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/materials
+[16.931s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/materials/scripts
+[16.931s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/materials/scripts/creeper.material
+[16.931s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/materials/textures
+[16.931s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/materials/textures/MarkerData.png
+[16.931s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/materials/textures/MarkerData.png.001.png
+[16.931s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/materials/textures/creeper.dae
+[16.931s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/model.sdf
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_21_azul/model.config
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/materials
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/materials/scripts
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/materials/scripts/creeper.material
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/materials/textures
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/materials/textures/MarkerData.png
+[16.932s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/materials/textures/MarkerData.png.001.png
+[16.933s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/materials/textures/creeper.dae
+[16.933s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/model.sdf
+[16.933s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/creeper/creeper_32_verde/model.config
+[16.933s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa
+[16.933s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_02
+[16.933s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_02/model.config
+[16.934s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_02/model.sdf
+[16.935s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_03
+[16.935s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_03/model.config
+[16.935s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_03/model.sdf
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_04
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_04/model.config
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_04/model.sdf
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_05
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_05/model.config
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_05/model.sdf
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_1
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_1/model.config
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/mesa/mesa_1/model.sdf
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle
+[16.936s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/materials
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/materials/scripts
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/materials/scripts/bicycle.material
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/materials/textures
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/materials/textures/bicycle.dae
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/materials/textures/bicycle.png
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/model.config
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bicycle/model.sdf
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/materials
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/materials/scripts
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/materials/scripts/bird.material
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/materials/textures
+[16.937s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/materials/textures/bird.dae
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/materials/textures/bird.png
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/model.config
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/bird/model.sdf
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_azul
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_azul/model.config
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_azul/model.sdf
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_vermelha_01
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_vermelha_01/model.config
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_vermelha_01/model.sdf
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_vermelha_02
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_vermelha_02/model.config
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/caixa_vermelha_02/model.sdf
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/materials
+[16.938s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/materials/scripts
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/materials/scripts/cat.material
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/materials/textures
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/materials/textures/cat.dae
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/materials/textures/cat.png
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/model.config
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/cat/model.sdf
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/materials
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/materials/scripts
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/materials/scripts/dog.material
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/materials/textures
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/materials/textures/dog.dae
+[16.939s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/materials/textures/dog.png
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/model.config
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/dog/model.sdf
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse/materials
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse/materials/scripts
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse/materials/scripts/horse.material
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse/materials/textures
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse/materials/textures/horse.png
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse/model.config
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/objeto/horse/model.sdf
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/parede
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/parede/model.config
+[16.940s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/parede/model.sdf
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/materials
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/materials/scripts
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/materials/scripts/pisosala.material
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/materials/textures
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/materials/textures/pisosala - antigo.png
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/materials/textures/pisosala.png
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/materials/textures/pisosala_cuenca.png
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/model.config
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pista23-B/pisosala/model.sdf
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[16.941s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.xacro
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/mybot.gazebo.urdf
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/mybot.gazebo.xacro
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/mybot.urdf
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/mybot.urdf.xacro
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/bases
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/bases/burger_base.stl
+[16.942s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/arm.dae
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/arm.stl
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/base_camera1.dae
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/base_camera1.stl
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/base_link_garra.dae
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/base_link_garra.stl
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/direita.dae
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/direita.stl
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/esquerda.dae
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/esquerda.stl
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/garra1garrabraco1.stl
+[16.943s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/garra1garradireita1.stl
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/garra1garraesquerda1.stl
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/lat11.dae
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/lat11.stl
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/lat21.dae
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/lat21.stl
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/lat31.dae
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/lat31.stl
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/servo_garra1.dae
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/garra/servo_garra1.stl
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/arm.dae
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/arm.stl
+[16.944s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/astra.dae
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/astra.jpg
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/direita.dae
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/esquerda.dae
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/garra_direita.stl
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/garra_esquerda.stl
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/l_finger.dae
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/l_finger_color.tif
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/l_finger_tip.dae
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/l_finger_tip_color.tif
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/lds.stl
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/r200.dae
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/sensors/r200.jpg
+[16.945s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/wheels
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/wheels/left_tire.stl
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/meshes/wheels/right_tire.stl
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger_insper.urdf
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/lab.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/pista23-B.world
+[16.946s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/include/
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[16.947s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[16.947s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[16.947s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[16.947s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[16.947s] -- Installing: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[16.947s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[16.948s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.948s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.948s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[16.948s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[16.948s] -- Up-to-date: /home/borg/colcon_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[16.948s] Invoked command in '/home/borg/colcon_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/borg/colcon_ws/install/turtlebot3_fake_node /usr/bin/cmake --install /home/borg/colcon_ws/build/turtlebot3_gazebo

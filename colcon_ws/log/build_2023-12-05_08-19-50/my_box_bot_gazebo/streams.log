@@ -1,0 +1,143 @@
+[0.581s] Invoking command in '/home/borg/colcon_ws/build/my_box_bot_gazebo': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/my_box_bot_description:/home/borg/colcon_ws/install/urdfbot_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake /home/borg/colcon_ws/src/my_box_bot_gazebo -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/install/my_box_bot_gazebo
+[0.814s] -- The C compiler identification is GNU 11.4.0
+[0.814s] -- The CXX compiler identification is GNU 11.4.0
+[0.814s] -- Detecting C compiler ABI info
+[0.814s] -- Detecting C compiler ABI info - done
+[0.815s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.815s] -- Detecting C compile features
+[0.815s] -- Detecting C compile features - done
+[0.815s] -- Detecting CXX compiler ABI info
+[0.816s] -- Detecting CXX compiler ABI info - done
+[0.816s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.816s] -- Detecting CXX compile features
+[0.816s] -- Detecting CXX compile features - done
+[0.817s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.936s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.035s] -- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+[1.037s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.095s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.102s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.111s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.128s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.231s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.234s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.332s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.358s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.399s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.413s] -- Looking for pthread.h
+[1.476s] -- Looking for pthread.h - found
+[1.476s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.544s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.544s] -- Found Threads: TRUE  
+[1.733s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.735s] -- Checking for module 'bullet>=2.82'
+[1.746s] --   Found bullet, version 3.05
+[1.841s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.887s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.906s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.939s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.951s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.958s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.964s] -- Searching for dependencies of ignition-math6
+[1.965s] -- Looking for OGRE...
+[1.965s] -- OGRE_PREFIX_WATCH changed.
+[1.970s] -- Checking for module 'OGRE'
+[1.982s] --   Found OGRE, version 1.9.0
+[2.012s] -- Found Ogre Ghadamon (1.9.0)
+[2.020s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.031s] -- Looking for OGRE_Paging...
+[2.038s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.038s] -- Looking for OGRE_Terrain...
+[2.044s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.044s] -- Looking for OGRE_Property...
+[2.049s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.049s] -- Looking for OGRE_RTShaderSystem...
+[2.054s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.054s] -- Looking for OGRE_Volume...
+[2.059s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.059s] -- Looking for OGRE_Overlay...
+[2.064s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.192s] -- Looking for ignition-math6 -- found version 6.15.0
+[2.194s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.195s] -- Searching for dependencies of ignition-transport8
+[2.209s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.217s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.221s] -- Checking for module 'libzmq >= 4'
+[2.232s] --   Found libzmq , version 4.3.4
+[2.262s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.266s] -- Checking for module 'uuid'
+[2.277s] --   Found uuid, version 2.37.2
+[2.304s] -- Found UUID: TRUE  
+[2.307s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.307s] -- Searching for dependencies of ignition-msgs5
+[2.321s] -- Looking for ignition-math6 -- found version 6.15.0
+[2.326s] -- Checking for module 'tinyxml2'
+[2.336s] --   Found tinyxml2, version 9.0.0
+[2.362s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.365s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.365s] -- Searching for dependencies of ignition-common3
+[2.366s] -- Looking for dlfcn.h - found
+[2.366s] -- Looking for libdl - found
+[2.367s] -- Found DL: TRUE  
+[2.377s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.377s] -- Searching for <ignition-common3> component [graphics]
+[2.380s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.380s] -- Searching for dependencies of ignition-common3-graphics
+[2.381s] -- Looking for ignition-math6 -- found version 6.15.0
+[2.384s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.384s] -- Searching for dependencies of ignition-fuel_tools4
+[2.449s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.458s] -- Checking for module 'jsoncpp'
+[2.470s] --   Found jsoncpp, version 1.9.5
+[2.500s] -- Found JSONCPP: TRUE  
+[2.505s] -- Checking for module 'libzip'
+[2.517s] --   Found libzip, version 1.7.3
+[2.546s] -- Found ZIP: TRUE  
+[2.546s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.546s] -- Looking for ignition-math6 -- found version 6.15.0
+[2.547s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.551s] -- Gazebo version: 11.10
+[2.551s] -- Checking for module 'tbb'
+[2.564s] --   Found tbb, version 2021.5.0
+[2.602s] -- Found my_box_bot_description: 0.0.0 (/home/borg/colcon_ws/install/my_box_bot_description/share/my_box_bot_description/cmake)
+[2.604s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.684s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.685s] -- Added test 'lint_cmake' to check CMake code style
+[2.686s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.687s] -- Added test 'xmllint' to check XML markup files
+[2.689s] -- Configuring done
+[2.694s] -- Generating done
+[2.695s] -- Build files have been written to: /home/borg/colcon_ws/build/my_box_bot_gazebo
+[2.708s] Invoked command in '/home/borg/colcon_ws/build/my_box_bot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/my_box_bot_description:/home/borg/colcon_ws/install/urdfbot_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake /home/borg/colcon_ws/src/my_box_bot_gazebo -DCMAKE_INSTALL_PREFIX=/home/borg/colcon_ws/install/my_box_bot_gazebo
+[2.708s] Invoking command in '/home/borg/colcon_ws/build/my_box_bot_gazebo': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/my_box_bot_description:/home/borg/colcon_ws/install/urdfbot_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/my_box_bot_gazebo -- -j12 -l12
+[2.741s] Invoked command in '/home/borg/colcon_ws/build/my_box_bot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/my_box_bot_description:/home/borg/colcon_ws/install/urdfbot_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --build /home/borg/colcon_ws/build/my_box_bot_gazebo -- -j12 -l12
+[2.761s] Invoking command in '/home/borg/colcon_ws/build/my_box_bot_gazebo': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/my_box_bot_description:/home/borg/colcon_ws/install/urdfbot_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/my_box_bot_gazebo
+[2.767s] -- Install configuration: ""
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/start_world.launch.py
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds/box_bot_empty.world
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/box_room
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/box_room/meshes
+[2.767s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/box_room/meshes/box_room.dae
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/box_room/meshes/chambre.png
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/box_room/model.config
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/box_room/model.sdf
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/package_run_dependencies/my_box_bot_gazebo
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/parent_prefix_path/my_box_bot_gazebo
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/ament_prefix_path.sh
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/ament_prefix_path.dsv
+[2.768s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/path.sh
+[2.769s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/path.dsv
+[2.769s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.bash
+[2.769s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.sh
+[2.769s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.zsh
+[2.769s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.dsv
+[2.769s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/package.dsv
+[2.769s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/packages/my_box_bot_gazebo
+[2.770s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/cmake/my_box_bot_gazeboConfig.cmake
+[2.770s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/cmake/my_box_bot_gazeboConfig-version.cmake
+[2.770s] -- Installing: /home/borg/colcon_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/package.xml
+[2.771s] Invoked command in '/home/borg/colcon_ws/build/my_box_bot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/borg/colcon_ws/install/my_box_bot_description:/home/borg/colcon_ws/install/urdfbot_description:/home/borg/colcon_ws/install/turtlebot3_simulations:/home/borg/colcon_ws/install/turtlebot3_manipulation:/home/borg/colcon_ws/install/turtlebot3_manipulation_teleop:/home/borg/colcon_ws/install/turtlebot3_manipulation_navigation2:/home/borg/colcon_ws/install/turtlebot3_manipulation_moveit_config:/home/borg/colcon_ws/install/turtlebot3_manipulation_hardware:/home/borg/colcon_ws/install/turtlebot3_manipulation_bringup:/home/borg/colcon_ws/install/turtlebot3_manipulation_description:/home/borg/colcon_ws/install/turtlebot3_manipulation_cartographer:/home/borg/colcon_ws/install/turtlebot3_gazebo:/home/borg/colcon_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --install /home/borg/colcon_ws/build/my_box_bot_gazebo
