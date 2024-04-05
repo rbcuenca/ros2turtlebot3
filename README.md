@@ -4,10 +4,7 @@ Hi! I hope that with this step-by-step guide, I can assist in updating your educ
 
 This project was carried out at the Robotics Laboratory of INSPER, for the Computational Robotics course. I had the assistance of Lícia Sales, a skilled programmer and deep connoisseur of this framework.
 
-Contributors: Rogério and Lícia
-
-A Escolha de utilizar 
-
+Contributors: Rogério Cuenca and [Lícia Sales](https://github.com/liciascl)
 
 Materials Used:
 
@@ -98,16 +95,6 @@ network:
                      password: "ssid_password"
 ```
 
-
-Configuração do RaspBerry PI 4
-- Iniciar a RaspBerry com o sistema gravado no cartão
-    - Usuário: ubuntu
-    - Senha Padrão: ubuntu (ele pedirá para repetir a senha e escolher uma nova)
-
-
-- Desabilitar a atualização automática
-    É interessante não permitir a atualização automática, então para desabilitar utilize o comando abaixo e altere o conteúdo como mostrado a seguir:
-
 Raspberry Pi 4 Configuration
 
 - Start the Raspberry Pi with the system recorded on the card
@@ -159,7 +146,8 @@ Remember that it won't be necessary to repeat these commands; they will only be 
 ```
 sudo reboot
 ```
-Para verificar se tudo esta como deveria estar, use o seguinte comando:
+
+To confirm that everything is functioning correctly, please utilize the following command:
 ```
 iw dev wlan0 get power_save
 ```
@@ -273,7 +261,7 @@ You can verify if everything is okay by performing teleoperation on the Raspberr
 First, find out the IP address of your Turtlebot (using ifconfig wlan0) and access it via SSH:
 ssh ubuntu@YOUR_IP_ADDRESS
 
-Inside the terminal, perform the robot bringup:
+In the terminal, perform the robot bringup:
 ``` 
 ros2 launch turtlebot3_bringup robot.launch.py
 ```
