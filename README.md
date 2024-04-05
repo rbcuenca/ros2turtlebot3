@@ -1,46 +1,64 @@
-# Turtlebot3 com ROS2 (Dashing no Robo e Foxy no Computador)
-Projeto Feito no Lab 404 do Inpser
-Colaboradores: Rogério e Lícia
+# Migration from ROS1 to ROS2 on Turtlebot3 named as InsperBot
 
-A escolha de utilizar o Ros2 Dashing no Robo se deu pela melhor aceitação dos drivers da RealSense D415i e a escolha do Ros2 Foxy no computador foi para manter a compatibilidade dos atuais robôs com Ros1, sendo assim um SSD híbrido com ROS1, ROS2 e Docker do Bebop2.
+Hi! I hope that with this step-by-step guide, I can assist in updating your educational or domestic robot from ROS1 to ROS2. Within this repository, you will find what has been developed to meet the needs of our institution's robotics laboratory.
 
-Material Utilizado:
-- Raspbery PI 4 
+This project was carried out at the Robotics Laboratory of INSPER, for the Computational Robotics course. I had the assistance of Lícia Sales, a skilled programmer and deep connoisseur of this framework.
+
+Contributors: Rogério and Lícia
+
+A Escolha de utilizar 
+
+
+Materials Used:
+
 - TurtleBot 3 Burger
-    - RaspBerry PI 4
+    - Raspberry Pi 4
     - OpenCR
-- Realsense D400
+    - Realsense D435i (or Raspi-Cam)
 
-Sistemas
-Computador: 
-- Ubuntu 20.04 LTS
-- ROS2 Foxy Fitzroy
-Rasp 4:
-- Ubuntu 18.04 server para RaspBerry Pi4
-- ROS2 Dashing Diademata
+
+Systems Used:
+
+Computer:
+    - Ubuntu 22.04 LTS
+    - ROS2 Humble Hawksbill
+Raspberry Pi 4:
+    - Ubuntu 22.04 Server for Raspberry Pi 4
+    - ROS2 Humble Hawksbill
 
 Sites:
-Robotis (E-Manual): https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/
-Ubuntu 18.04 para Raspi4 arm64: http://old-releases.ubuntu.com/releases/18.04.4/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz
-ROS2 Dashing: https://docs.ros.org/en/dashing/Installation.html
-Ubunu 20.04 LTS Desktop: https://releases.ubuntu.com/focal/
-ROS2 Foxy: https://docs.ros.org/en/foxy/Installation.html
-ROS2 Wraper Intel Realsense: https://github.com/intel/ros2_intel_realsense
+[Robotis (E-Manual)](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/)
+[Ubuntu 12.04 for Raspi4](https://ubuntu.com/download/raspberry-pi) 
+[ROS2 Humble](https://docs.ros.org/en/humble/index.html)
+[ROS2 Wraper Intel Realsense](https://github.com/IntelRealSense/realsense-ros)
 
 
 
-Configuração do RaspBerry PI 4
-- Utilizar o "Disks" do linux para abrir o arquivo de imagem pré-instalada do Ubuntu server 18.04 para Raspi4
-- Iniciar a RaspBerry com o sistema gravado no cartão
-    - Usuário: ubuntu
-    - Senha Padrão: ubuntu (ele pedirá para repetir a senha e escolher uma nova)
-- Configurar a rede por NETPLAN:
-Deixarei aqui duas configurações, sendo a primeira para rede TTLS com acesso corporativo e o segundo para redes "domésticas".
-Configuração para Rede com TTLS, usuário e senha (Sem CA).
+## Part #1 - Raspberry Pi 4 SD Card Preparation
+
+Installing the Ubuntu 22.04 Server:
+    - Run Raspberry Pi Imager - [LINK](https://www.raspberrypi.com/documentation/computers/getting-started.html#raspberry-pi-imager)
+    - Click CHOOSE OS.
+    - Select Other gerneral-purpose OS.
+    - Select Ubuntu.
+    - Select Ubuntu Server 22.04.5 LTS (64-bit) that support RPi 3/4/400.
+    - Click CHOOSE STORAGE and select the micro SD card.
+    - Click WRITE to install the Ubuntu.
+
+Before removing the memory card, let's set up network access. One way to do this is by using netplan, which is already enabled by default.
+
+To edit the file, navigate to the location where the SD card is mounted (for example /media/USERNAME) and use the following command:
 ```
-# Exemplo de configuracao NETPLAN com rede "tuledada" TTLS e SEM Certificado.
-# Editar o arquivo yaml dentro da pasta /etc/netplan e colar este texto substituindo as configuracoes de rede.
-# Extremamente importante manter a tabulacao como esta aqui.
+sudo nano /writable/etc/netplan/50-cloud-init.yaml
+```
+
+I'll provide two examples of configuration for this file. The first one is a way to configure using TTLS tunneling with NO certificate, and the second one for a "home" connection.
+
+Example 1: TTLS tunneling with NO certificate:
+```
+# Example of NETPLAN configuration for TTLS network and NO certificate.
+# Edit the yaml file inside the /etc/netplan folder and paste this text, replacing the network configurations.
+# It's extremely important to maintain the indentation as it is here.
 network:
     ethernets:
         eth0:
@@ -59,10 +77,12 @@ network:
                        identity: "username"
                        password: "password"
 ```
+
+Example 2: "Home" connection:
 ```
-# Configuracao padrao para redes "domesticas" (Configuracao padrao WPA(2)-PSK com senha e ssid)
-# Editar o arquivo yaml dentro da pasta /etc/netplan e colar este texto substituindo as configuracoes de rede.
-# Extremamente importante manter a tabulacao como esta aqui.
+# Default configuration for "home" networks (Default WPA(2)-PSK configuration with password and SSID)
+# Edit the yaml file inside the /etc/netplan folder and paste this text, replacing the network configurations.
+# It's extremely important to maintain the indentation as it is here.
 network:
     ethernets:
         eth0:
@@ -77,9 +97,24 @@ network:
                 "ssid_name":
                      password: "ssid_password"
 ```
+
+
+Configuração do RaspBerry PI 4
+- Iniciar a RaspBerry com o sistema gravado no cartão
+    - Usuário: ubuntu
+    - Senha Padrão: ubuntu (ele pedirá para repetir a senha e escolher uma nova)
+
+
 - Desabilitar a atualização automática
     É interessante não permitir a atualização automática, então para desabilitar utilize o comando abaixo e altere o conteúdo como mostrado a seguir:
 
+Raspberry Pi 4 Configuration
+
+- Start the Raspberry Pi with the system recorded on the card
+    - Username: ubuntu
+    - Default Password: ubuntu (it will ask to repeat the password and choose a new one)
+- Disable automatic updates
+    It's advisable to disable automatic updates. To do so, use the command below and change the content as shown:
 ```
 sudo nano /etc/apt/apt.conf.d/20auto-upgrades
 ```
@@ -88,12 +123,12 @@ APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
 ```
 
-- Desabilitar o PowerSave do Wlan0 (caso nao esteja desabilitado a rede "morre" apos alguns minutos)
-    - Para desabilitar voce precisa editar o arquivo de configuracao do servico com o comando abaixo: 
+- Disable PowerSave for Wlan0 (if not disabled, the network "dies" after a few minutes)
+  To disable it, you need to edit the service configuration file with the following command:
 ```
 sudo systemctl --full --force edit wifi_powersave@.service
 ```
-Na tela vazia do editor,  coloque o texto abaixo:
+On the blank screen of the editor, insert the following text:
 ```
 [Unit]
 Description=Set WiFi power save %i
@@ -107,18 +142,20 @@ ExecStart=/sbin/iw dev wlan0 set power_save %i
 [Install]
 WantedBy=sys-subsystem-net-devices-wlan0.device
 ```
-Agora ajuste como quer que o PowerSave do WiFi inicie no boot. Se quiser que o PowerSave esteja LIGADO use o codigo:
+
+Now adjust how you want the WiFi PowerSave to start at boot. If you want PowerSave to be ON, use the code:
 ```
 sudo systemctl disable wifi_powersave@off.service
 sudo systemctl enable wifi_powersave@on.service
 ```
-Se quiser que o PowerSave esteja DESLIGADO (exatamente o que queremos) use estes comandos:
+
+If you want PowerSave to be OFF (exactly what we want), use these commands:
 ```
 sudo systemctl disable wifi_powersave@on.service
 sudo systemctl enable wifi_powersave@off.service
 ```
-Lembrando que nao sera necessario repetir estes comandos, apenas serao executados uma vez ou se quiser mudar o status do PowerSave.
-Agora basta reiniciar
+
+Remember that it won't be necessary to repeat these commands; they will only be executed once or if you want to change the PowerSave status. Now simply restart.
 ```
 sudo reboot
 ```
@@ -126,15 +163,39 @@ Para verificar se tudo esta como deveria estar, use o seguinte comando:
 ```
 iw dev wlan0 get power_save
 ```
-A resposat esperada e: 
+
+The expected response is:
 Power save: off
-Se acontecer se aparecer: "Poser save: ON" basta repetir os comandos abaixo e verificar novamente.
+If "Power save: ON" appears, simply repeat the commands below and check again.
 ```
 sudo systemctl disable wifi_powersave@on.service
 sudo systemctl enable wifi_powersave@off.service
 ```
 
-Agora chegou a hora de instalar ou configurar o LDS. Os TurtleBots3 comprados desde o inicio de 2022 estao com o LDS-02 os anteriores com o LDS-01. Caso voce use o LDS-01 nao precisa fazer a instalacao do driver e atualizacao do pacote do TurtleBot3. Entao so execute os comandos abaixo se voce usa o LDS-02!!!
+Now you'll install ROS2 Humble Hawksbill from the instructions in [the official ROS2 Humble instalation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
+
+After installing ROS2 and restarting the Raspberry Pi, let's install the specific packages for TurtleBot:
+```
+sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
+sudo apt install ros-humble-hls-lfcd-lds-driver
+sudo apt install ros-humble-turtlebot3-msgs
+sudo apt install ros-humble-dynamixel-sdk
+sudo apt install libudev-dev
+mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
+git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
+cd ~/turtlebot3_ws/src/turtlebot3
+rm -r turtlebot3_cartographer turtlebot3_navigation2
+cd ~/turtlebot3_ws/
+echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+source ~/.bashrc
+colcon build --symlink-install --parallel-workers 1
+echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Now it's time to install or configure the LDS. TurtleBots3 purchased since the beginning of 2022 come with the LDS-02, while earlier versions come with the LDS-01. If you use the LDS-01, you don't need to install the driver or update the TurtleBot3 package. So, only execute the commands below if you use the LDS-02!
+
 ```
 sudo apt update
 sudo apt install libudev-dev
@@ -144,130 +205,138 @@ cd ~/turtlebot3_ws/src/turtlebot3 && git pull
 rm -r turtlebot3_cartographer turtlebot3_navigation2
 cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
-Agora vamos exportar para o .bashrc o modelo do LDS que voce usa. Se voce usa o modelo LDS-02 substitua, no texto abaixo, o LDS-01 pelo LDS-02:
+
+USB Port Setting for OpenCR
+```
+sudo cp `ros2 pkg prefix turtlebot3_bringup`/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+
+Now let's export the model of the LDS you use to the .bashrc. If you use the LDS-02 model, replace LDS-01 with LDS-02 in the text below:
 ```
 echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
 source ~/.bashrc
 ```
-Por ultimo vamos dizer qual o modelo do Turtlebot3 ele eh. Voce deve substituir o burger pelo seu modelo (burger, waffle ou waffle_pi):
+
+Finally, let's specify the model of the Turtlebot3. You should replace "burger" with your model (burger, waffle, or waffle_pi) and set the ROS_DOMAIN_ID:
 ```
 echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 source ~/.bashrc
 ```
-Antes de configurar a OpenCR eu faço uma atualização do sistema e tem um fato interessante, ou na atualização ou se desligar o "hibernar automático" as USBs deixaraão de funcionar, então basta trocar o kernel para o que vou apontar nos códigos abaixo ou mais novo:
 
+Before configuring the OpenCR, I perform a system update, and there's an interesting fact: either during the update or if automatic hibernation is disabled, the USBs will stop working. So, you just need to switch the kernel to the one I'll specify in the codes below or a newer one:
 ```
 apt list linux-image*raspi
 ```
-Este comando acima listará todos os kernels para a raspi, agora é só escolher e instalar com o comando abaixo:
+
+This command above will list all kernels for the Raspberry Pi. Now, you just need to choose one and install it with the command below:
+
 ```
 sudo apt install --install-recommends linux-image-5.4.0-1047-raspi
 sudo apt update
 sudo apt upgrade
 ```
 
-- Configuracao do OpenCR
+- OpenCR Configuration
+At this moment, you should connect the OpenCR to the Raspberry Pi using the USB cable.
+Let's proceed with the procedure to update the OpenCR.
 
-Neste momento voce deve conectar o OpenCR ao Rasp com o cabo USB
-Vamos ao procecimento para atualizar o OpenCR
-
-Instalacao dos pacotes para atualizacao do firmware:
+Installation of packages for firmware update:
 ```
 sudo dpkg --add-architecture armhf
 sudo apt update
 sudo apt install libc6:armhf
 ```
-Agora troque o modelo do seu TurtleBot3 antes de rodar o codigo:
+
+Now change the model of your TurtleBot3 before running the code:
 ```
 export OPENCR_PORT=/dev/ttyACM0
 export OPENCR_MODEL=burger
 rm -rf ./opencr_update.tar.bz2
 ```
-Fazer o Download do pacote do firmware atualizado:
+
+Download the updated firmware package:
 ```
 wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
 tar -xvf ./opencr_update.tar.bz2
 ```
-Realizar a atualizacao do firmware do OpenCR:
+
+Perform the firmware update of the OpenCR:
 ```
 cd ~/opencr_update
 ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
-Voce pode verificar se tudo esta ok realizando, no RASP (no Turtlebot3) o teleop (teleoperacao) e mover as rodas com o teclado.
+You can verify if everything is okay by performing teleoperation on the Raspberry Pi (Turtlebot3) and moving the wheels using the keyboard.
 
-Veja qual o IP do seu turtlebot (ifconig wlan0) e acesse via ssh.
-ssh ubuntu@SEU_ENDERECO_IP
-Lembrando que o usuario eh ubuntu e a senha eh turtlebot.
+First, find out the IP address of your Turtlebot (using ifconfig wlan0) and access it via SSH:
+ssh ubuntu@YOUR_IP_ADDRESS
 
-Dentro do terminal realize o bringup do robo:
+Inside the terminal, perform the robot bringup:
 ``` 
 ros2 launch turtlebot3_bringup robot.launch.py
 ```
-Se tudo deu certo, a ultima frase terminara com: Run!
 
-Agora em um novo terminal execute o Teleop:
+If everything went well, the last sentence will end with: Run!
+
+Now, in a new terminal, execute the Teleop:
 ``` 
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
-Neste ponto voce deve estar feliz com os motores funcioando.
 
-Agora vamos para o desafio maior, fazer a Intel RealSense funcionar no Foxy!!!!
-- Instalar o PIP:
+At this point, you should be happy with the motors working.
+
+
+Now, let's move on to the bigger challenge, getting the Intel RealSense to work on Humble!!!!
+- Install PIP:
 ```
 sudo apt-get install python3-pip
 ```
-- Instlar NumPy
+- Install NumPy
 ```
 pip install numpy
 ``` 
-- Instalar OpenCV
+- Install OpenCV
 ```
 sudo apt-get install libopencv-dev
 pip install opencv-contrib-python
 ```
-Para instar os drivers da RealSense para o ROS2 Dashing, basta seguir este git:
+To install the RealSense drivers for ROS2 Humble, simply follow this GitHub repository:
 ```
-https://github.com/intel/ros2_intel_realsense
-```
-
-# Configuracoes do PC REMOTO
-Para a preparação do PC Remoto, não há muitos procedimentos, basta o computador ter instalado um Ubuntu 20.04 (no caso do Ros2 Foxy) e iniciar a instlação do ROS2 Foxy com os seguinte comandos:
-    
-```    
-wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
-sudo chmod 755 ./install_ros2_foxy.sh
-bash ./install_ros2_foxy.sh
+[https://github.com/intel/ros2_intel_realsense](https://github.com/IntelRealSense/realsense-ros)
 ```
 
-Agora a instalação das dependências (Gazebo 11, Cartographer e Navigation2):
-```
-sudo apt-get install ros-foxy-gazebo-*
-sudo apt install ros-foxy-cartographer
-sudo apt install ros-foxy-cartographer-ros
-sudo apt install ros-foxy-navigation2
-sudo apt install ros-foxy-nav2-bringup
-```
-Instalação dos pacotes do Turtlebot:
+# Remote PC Setup
+For the preparation of the Remote PC, there aren't many procedures. You just need a computer with Ubuntu 22.04 installed (in the case of Ros2 Humble) and start the installation of ROS2 Humble with the following [the oficioal instalation guide.](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
 
+
+Install Dependent ROS 2 Packages:
+```
+sudo apt install ros-humble-gazebo-*
+sudo apt install ros-humble-cartographer
+sudo apt install ros-humble-cartographer-ros
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-bringup
+```
+
+Install TurtleBot3 Packages:
 ```
 source ~/.bashrc
-sudo apt install ros-foxy-dynamixel-sdk
-sudo apt install ros-foxy-turtlebot3-msgs
-sudo apt install ros-foxy-turtlebot3
+sudo apt install ros-humble-dynamixel-sdk
+sudo apt install ros-humble-turtlebot3-msgs
+sudo apt install ros-humble-turtlebot33
 ```
-Preparando o ambiente:
+Environment Configuration:
 ```
 echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Com este tutorial o Turtlebot3 Burger com a Realsense funcionaram perfeitamente.
 
-Segue abaixo um link para migrar códigos do ROS1 para o ROS2.
+I hope this step-by-step guide helps you to perform the ROS1 to ROS2 upgrade on your robot or TurtleBot.
 
-
-
-# Links para portar do ROS1 para ROS2
-https://docs.ros.org/en/foxy/Contributing/Migration-Guide-Python.html
+Best Regards,
+Rogerio B. Cuenca.
 
 
